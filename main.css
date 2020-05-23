@@ -256,6 +256,7 @@ h1 {
   color: white;
   padding: 16px 100px;
   text-align: center;
+  font-weight: 500;
   font-size: 16px;
   margin: 4px 2px;
   transition: 0.3s;
@@ -300,7 +301,7 @@ h1 {
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1150px) {
   .column {
     width: 50%;
     flex: 50%;
@@ -426,10 +427,6 @@ h3 {
   text-align: center;
 }
 
-.outer {
-  position: relative;
-}
-
 .service-background-box {
   position: absolute;
   margin-left: auto;
@@ -437,7 +434,6 @@ h3 {
   left: 0;
   right: 0;
   width: 25%;
-  min-width: 500px;
   height: 600px;
   background-color: #ac9455;
   z-index: -10;
@@ -486,6 +482,7 @@ h2 {
 
 .AboutDescription {
   margin-top: 50px;
+  margin-bottom: 50px;
   font-family: Exo, sans-serif;
   line-height: 25px;
   color: #000000;

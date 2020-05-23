@@ -5,12 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SH Digital Media</title>
-
-  <link rel="stylesheet" href="main.css" />
 </head>
-
-<body>
-  ​
+<body onresize="resize()">  ​
 
   <div class="phone-wrapper">
     <img src="images/phone.svg" alt="" class="phone-icon" width="20" height="20" />
@@ -122,8 +118,8 @@
   <div class="More-service-wrapper">
     <a class="btn-services">See All Services</a>
   </div> 
-  <div class="service-background-box">  </div>
-  <div class="about">
+  <div class="service-background-box" id="service-background-box">  </div>
+  <div class="about" id="about">
     <div class="about-content-wrapper">
       <h6>about us</h6>
       <h2>Attention to the Details. Trained to design, customize & build your perfect system. </h2>
@@ -135,6 +131,8 @@
     </div>
   </div>
   </div>
+  <link rel="stylesheet" href="main.css" />
+  <script src="index.js"></script> 
 </body>
 
 </html>

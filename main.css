@@ -404,6 +404,11 @@ h3 {
   display: flex;
   margin: 0 auto;
 }
+@media screen and (max-width: 400px) {
+  .readbtn {
+    padding: 20px 70px;
+  }
+}
 
 .More-service-wrapper {
   position: relative;

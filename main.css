@@ -619,24 +619,26 @@ h4 {
 .column-partners img {
   margin: auto;
   display: block;
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 .column-partners:hover {
   background-color: #1b1b1b;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1300px) {
   .column-partners {
-    width: 50%;
+    min-width: 50%;
     flex: 50%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .column-partners {
-    width: 92%;
-  }
-  .column-partners {
-    flex: 100%;
+@media screen and (max-width: 750px) {
+  .column-partners img {
+    max-height: 50px;
+    width: 90%;
+    height: 90%;
   }
 }

@@ -665,19 +665,6 @@ h4 {
   width: 20%;
   height: auto;
 }
-
-.CEOIconWrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.CEOIconWrapper img {
-  border-radius: 50%;
-}
-
 .ceoiconbackground {
   margin: auto;
   margin-top: 30px;
@@ -688,11 +675,21 @@ h4 {
   border-radius: 100%;
   background-color: #d3d3d3;
   transform: scale(1);
-  transition: 0.3s all ease;
+  transition: 0.2s all ease;
+}
+
+.CEOIconWrapper {
+}
+
+.CEOIconWrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  margin: 0 auto;
 }
 
 .ceoiconbackground:hover {
-  padding: 0px;
+  padding: 0.5px;
 }
 
 @media screen and (max-width: 1150px) {

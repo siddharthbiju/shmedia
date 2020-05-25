@@ -497,6 +497,7 @@ h2 {
 .vertical-space {
   width: 100%;
   height: 80px;
+  background: #0000;
 }
 
 .work-section {
@@ -677,9 +678,6 @@ h4 {
   transition: 0.2s all ease;
 }
 
-.CEOIconWrapper {
-}
-
 .CEOIconWrapper img {
   width: 100%;
   height: 100%;
@@ -719,6 +717,18 @@ h4 {
   width: 100%;
 }
 
+.yt-mobile {
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+}
+
+.yt-mobile iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .yt {
   width: 65%;
   height: 100%;
@@ -733,16 +743,18 @@ h4 {
 .comments {
   width: 35%;
   height: 100%;
-  float: right;
+  float: left;
 }
 
 @media screen and (max-width: 1069px) {
   .comments {
     width: 100%;
-    float: none;
   }
   .yt {
     display: none;
+  }
+  .yt-mobile {
+    display: block;
   }
 }
 

@@ -33,20 +33,11 @@ function resize() {
         .setAttribute("style", "height:" + mobileyt + "px");
 }
 
-$(".main-body").on("click", function() {
-    $(".dropdown").children(".dropdown-menu").slideUp(300);
-
-    if ($(this).parent().hasClass("open")) {
-        $(this).next(".dropdown-menu").slideUp(300);
+$(".navbar .dropdown").hover(
+    function() {
+        $(this).find(".dropdown-menu").first().stop(true, true).slideDown(300);
+    },
+    function() {
+        $(this).find(".dropdown-menu").first().stop(true, true).slideUp(300);
     }
-});
-
-$(".navbar-nav a").on("click", function() {
-    $(".dropdown").children(".dropdown-menu").slideUp(300);
-
-    if ($(this).parent().hasClass("open")) {
-        $(this).next(".dropdown-menu").slideUp(300);
-    } else {
-        $(this).next(".dropdown-menu").slideDown(300);
-    }
-});
+);

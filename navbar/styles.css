@@ -134,30 +134,3 @@
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
     border-bottom-color: #ffffff;
 }
-
-@media (min-width: 992px) {
-    .animate {
-        animation-duration: 0.3s;
-        -webkit-animation-duration: 0.3s;
-        animation-fill-mode: both;
-        -webkit-animation-fill-mode: both;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .navbar-nav .dropdown-menu {
-        display: none;
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .dropdown-menu>li>a {
-        color: #777 !important;
-        padding: 5px 15px 5px 25px !important;
-    }
-}

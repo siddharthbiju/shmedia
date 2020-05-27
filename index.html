@@ -6,41 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SH Digital Media</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="comments/comments.css">
   <link rel="stylesheet" href="form.css">
-  
+
 </head>
 
 <body onresize="resize()"> ​
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header
-      class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
-      role="banner"
-    >
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
       <div class="container">
         <div class="navbar-header">
-          <button
-            class="navbar-toggle"
-            type="button"
-            data-toggle="collapse"
-            data-target=".bs-navbar-collapse"
-          >
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -50,10 +29,7 @@
             <img src="logo3.png" height="30" alt="" />
           </a>
         </div>
-        <nav
-          class="collapse navbar-collapse bs-navbar-collapse"
-          role="navigation"
-        >
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
           <ul class="nav navbar-nav navbar-right">
             <li>
               <a href="#">Home</a>
@@ -62,9 +38,7 @@
               <a href="#">About</a>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >services<b class="caret"></b
-              ></a>
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown" >services<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Home theatre</a></li>
                 <li><a href="#">home automation</a></li>
@@ -72,16 +46,24 @@
             </li>
 
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle " data-toggle="dropdown"
-                >Products<b class="caret"></b
-              ></a>
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown">Products<b class="caret"></b></a>
               <ul class="dropdown-menu products-menu">
                 <div class="dropdown-images">
                   <li><img src="images/products/amplifier.png" height="50px" /></li>
-                  <li><img src="images/products/projector.png" height="50px" /></li>
-                  <li><img src="images/products/speaker.png" height="50px" /></li>
-                  <li><img src="images/products/subwoofer.png" height="50px" /></li>
+                  <h6>amplifiers</h6>
                 </div>
+                <div class="dropdown-images">
+                  <li><img src="images/products/projector.png" height="50px" /></li>
+                  <h6>projectors</h6>
+                </div>
+                <div class="dropdown-images">
+                <li><img src="images/products/speaker.png" height="50px" /></li>
+                <h6>speakers</h6>
+              </div>
+                <div class="dropdown-images">
+                <li><img src="images/products/subwoofer.png" height="50px" /></li>
+                <h6>SUBWOOFERS</h6>
+              </div>
               </ul>
             </li>
 
@@ -98,362 +80,374 @@
 
 
 
-  <div class="hero-wrapper">
-    <div class="hero-text-wrapper">
-      <h1 class="hero-title">
-        CUSTOM HOME CINEMA & HOME AUTOMATION
-      </h1>
-      <a href="#Services-Section" class="btn">Explore</a>
+    <div class="hero-wrapper">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">
+          CUSTOM HOME CINEMA & HOME AUTOMATION
+        </h1>
+        <a href="#Services-Section" class="btn">Explore</a>
+      </div>
+
+      <div class="video-container">
+        <video autoplay loop muted id="video-bg">
+          <source src="videos/intro.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <div class="row" id="Services-Section">
+      <div class="column">
+        <div class="serviceiconbackground">
+          <div class="ServiceIconWrapper">
+            <img
+              src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
+              alt="" class="services-icon" width="50" height="50">
+          </div>
+        </div>
+        <div class="Servicesline"></div>
+        <h6>SERVICES</h6>
+        <h3>AUDIO DESIGN</h3>
+        <p class="service-text">Determining the speakers, amplifiers, and subwoofers to
+          enable the theater to perform at cinema sound pressure
+          levels (SPLs). </p>
+      </div>
+
+      <div class="column">
+        <div class="serviceiconbackground">
+          <div class="ServiceIconWrapper">
+            <img
+              src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
+              alt="" class="services-icon" width="50" height="50">
+          </div>
+        </div>
+        <div class="Servicesline"></div>
+        <h6>SERVICES</h6>
+        <h3>VIDEO DESIGN</h3>
+        <p class="service-text">Selecting the projector and screen to provide appropriate
+          image brightness and contrast for varying theater usages. </p>
+      </div>
+
+      <div class="column">
+        <div class="serviceiconbackground">
+          <div class="ServiceIconWrapper">
+            <img
+              src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
+              alt="" width="50" height="50">
+          </div>
+        </div>
+        <div class="Servicesline"></div>
+        <h6>SERVICES</h6>
+        <h3>ACOUSTIC DESIGN</h3>
+        <p class="service-text">Specifying the number, type and location of acoustic
+          treatments to meet targets for sound decay and frequency
+          response. </p>
+      </div>
+
+      <div class="column">
+        <div class="serviceiconbackground">
+          <div class="ServiceIconWrapper">
+            <img
+              src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
+              alt="" class="services-icon" width="50" height="50">
+          </div>
+        </div>
+        <div class="Servicesline"></div>
+        <h6>SERVICES</h6>
+        <h3>HOME THEATRE LAYOUT</h3>
+        <p class="service-text">Placing audio and video components within the room and
+          determining seating placement.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="More-service-wrapper">
+      <a class="btn-services">See All Services</a>
     </div>
 
-    <div class="video-container">
-      <video autoplay loop muted id="video-bg">
-        <source src="videos/intro.mp4" type="video/mp4" />
-      </video>
+    <div id="About-Us"></div>
+    <div class="service-background-box" id="service-background-box"> </div>
+    <div class="about" id="about">
+      <div class="about-content-wrapper">
+        <h6>about us</h6>
+        <h2>Attention to the Details. Trained to design, customize & build your perfect system. </h2>
+        <p class="AboutDescription">SH Digital Media is an audio/visual design and integration company specializing in
+          sound, video, and control solutions for Schools, Houses of Worship, Theaters, Retail Establishments,
+          Government
+          Facilities, Corporate Clients and the Hospitality Industry. We are located in Angamaly, Ernakulam, and
+          position
+          in an optimal location to serve clients in the Kerala and beyond.<br />
+        </p>
+        <a href="#" class="btn readbtn">Read More</a>
+        <p><br /></p>
+      </div>
     </div>
-  </div>
-  <div class="row" id="Services-Section">
-    <div class="column">
-      <div class="serviceiconbackground">
-        <div class="ServiceIconWrapper">
-          <img src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
-            alt="" class="services-icon" width="50" height="50">
+    </div>
+    <div class="vertical-space"></div>
+    <div class="work-section" id="work-section">
+      <div class="row-work" id="Services-Section">
+        <div class="column-work">
+          <img src="images/1.jpg" />
+          <div class="work-description">
+            <h6 class="h6-work">PROJECTS</h6>
+            <h4>PROJECT NAME</h4>
+          </div>
+        </div>
+        <div class="column-work">
+          <img src="images/2.jpg" />
+          <div class="work-description">
+            <h6 class="h6-work">PROJECTS</h6>
+            <h4>PROJECT NAME</h4>
+          </div>
+        </div>
+        <div class="column-work">
+          <img src="images/3.jpg" />
+          <div class="work-description">
+            <h6 class="h6-work">PROJECTS</h6>
+            <h4>PROJECT NAME</h4>
+          </div>
+        </div>
+        <div class="column-work">
+          <img src="images/4.jpg" />
+          <div class="work-description">
+            <h6 class="h6-work">PROJECTS</h6>
+            <h4>PROJECT NAME</h4>
+          </div>
         </div>
       </div>
-      <div class="Servicesline"></div>
-      <h6>SERVICES</h6>
-      <h3>AUDIO DESIGN</h3>
-      <p class="service-text">Determining the speakers, amplifiers, and subwoofers to
-        enable the theater to perform at cinema sound pressure
-        levels (SPLs). </p>
+    </div>
+    </div>
+    <div class="More-service-wrapper">
+      <a class="btn-services">See All Projects</a>
     </div>
 
-    <div class="column">
-      <div class="serviceiconbackground">
-        <div class="ServiceIconWrapper">
-          <img src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
-            alt="" class="services-icon" width="50" height="50">
+    <div class="row-partners">
+      <div class="column-partners">
+        <img src="images/partners/B&W.png">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/benq.png">
+      </div>
+
+      <div class="column-partners partner-top-override">
+        <img src="images/partners/denon.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/epson.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/kenwood.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/klipsch.png">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/pioneer.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/yamaha.jpg">
+      </div>
+
+      <div class="column-partners ">
+        <img src="images/partners/jbl.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/Monitor-Audio.png">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/paradigm.jpg">
+      </div>
+
+      <div class="column-partners">
+        <img src="images/partners/polk.jpg">
+      </div>
+    </div>
+    <div class="vertical-space"></div>
+
+    <div class="row-ceo">
+      <div class="column-ceo">
+        <div class="ceoiconbackground">
+          <div class="CEOIconWrapper">
+            <img src="images/sarath.jpeg" alt="">
+          </div>
         </div>
+        <h6>CEO</h6>
+        <h3>Sarath Raj</h3>
+        <div class="CEOline"></div>
       </div>
-      <div class="Servicesline"></div>
-      <h6>SERVICES</h6>
-      <h3>VIDEO DESIGN</h3>
-      <p class="service-text">Selecting the projector and screen to provide appropriate
-        image brightness and contrast for varying theater usages. </p>
-    </div>
 
-    <div class="column">
-      <div class="serviceiconbackground">
-        <div class="ServiceIconWrapper">
-          <img src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
-            alt="" width="50" height="50">
+      <div class="column-ceo">
+        <div class="ceoiconbackground">
+          <div class="CEOIconWrapper">
+            <img src="images/varghese.png" alt="" class="services-icon">
+          </div>
         </div>
+        <h6>CEO</h6>
+        <h3>Varghese</h3>
+        <div class="CEOline"></div>
       </div>
-      <div class="Servicesline"></div>
-      <h6>SERVICES</h6>
-      <h3>ACOUSTIC DESIGN</h3>
-      <p class="service-text">Specifying the number, type and location of acoustic
-        treatments to meet targets for sound decay and frequency
-        response. </p>
+
     </div>
 
-    <div class="column">
-      <div class="serviceiconbackground">
-        <div class="ServiceIconWrapper">
-          <img src="https://assets.website-files.com/5da830db805cc10bd25a49ea/5e76916a0a930f5b51c4743c_architecture.svg"
-            alt="" class="services-icon" width="50" height="50">
+    <div class="vertical-space"></div>
+    <div class="get-contact-background-box" id="get-contact-background-box"> </div>
+    <div class="get-contact" id="get-contact">
+      <div class="get-contact-content-wrapper">
+        <h2>Get A Free Quote </h2>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+          <label for="name" class="form__label">Name</label>
         </div>
-      </div>
-      <div class="Servicesline"></div>
-      <h6>SERVICES</h6>
-      <h3>HOME THEATRE LAYOUT</h3>
-      <p class="service-text">Placing audio and video components within the room and
-        determining seating placement.
-      </p>
-    </div>
-  </div>
-  </div>
-  <div class="More-service-wrapper">
-    <a class="btn-services">See All Services</a>
-  </div>
 
-  <div id="About-Us"></div>
-  <div class="service-background-box" id="service-background-box"> </div>
-  <div class="about" id="about">
-    <div class="about-content-wrapper">
-      <h6>about us</h6>
-      <h2>Attention to the Details. Trained to design, customize & build your perfect system. </h2>
-      <p class="AboutDescription">SH Digital Media is an audio/visual design and integration company specializing in
-        sound, video, and control solutions for Schools, Houses of Worship, Theaters, Retail Establishments, Government
-        Facilities, Corporate Clients and the Hospitality Industry. We are located in Angamaly, Ernakulam, and position
-        in an optimal location to serve clients in the Kerala and beyond.<br />
-      </p>
-      <a href="#" class="btn readbtn">Read More</a>
-      <p><br /></p>
-    </div>
-  </div>
-  </div>
-  <div class="vertical-space"></div>
-  <div class="work-section" id="work-section">
-    <div class="row-work" id="Services-Section">
-      <div class="column-work">
-        <img src="images/1.jpg" />
-        <div class="work-description">
-          <h6 class="h6-work">PROJECTS</h6>
-          <h4>PROJECT NAME</h4>
+        <div class="form__group field">
+          <input type="email" class="form__field" placeholder="Email" name="Email" id="Email" required />
+          <label for="Email" class="form__label">Email</label>
+
         </div>
-      </div>
-      <div class="column-work">
-        <img src="images/2.jpg" />
-        <div class="work-description">
-          <h6 class="h6-work">PROJECTS</h6>
-          <h4>PROJECT NAME</h4>
+
+        <div class="form__group field ">
+          <input type="phone" class="form__field" placeholder="phone" name="phone" id="phone" required />
+          <label for="phone" class="form__label">Phone</label>
         </div>
-      </div>
-      <div class="column-work">
-        <img src="images/3.jpg" />
-        <div class="work-description">
-          <h6 class="h6-work">PROJECTS</h6>
-          <h4>PROJECT NAME</h4>
-        </div>
-      </div>
-      <div class="column-work">
-        <img src="images/4.jpg" />
-        <div class="work-description">
-          <h6 class="h6-work">PROJECTS</h6>
-          <h4>PROJECT NAME</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="More-service-wrapper">
-    <a class="btn-services">See All Projects</a>
-  </div>
-
-  <div class="row-partners">
-    <div class="column-partners">
-      <img src="images/partners/B&W.png">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/benq.png">
-    </div>
-
-    <div class="column-partners partner-top-override">
-      <img src="images/partners/denon.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/epson.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/kenwood.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/klipsch.png">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/pioneer.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/yamaha.jpg">
-    </div>
-
-    <div class="column-partners ">
-      <img src="images/partners/jbl.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/Monitor-Audio.png">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/paradigm.jpg">
-    </div>
-
-    <div class="column-partners">
-      <img src="images/partners/polk.jpg">
-    </div>
-  </div>
-  <div class="vertical-space"></div>
-
-  <div class="row-ceo">
-    <div class="column-ceo">
-      <div class="ceoiconbackground">
-        <div class="CEOIconWrapper">
-          <img src="images/sarath.jpeg" alt="">
-        </div>
-      </div>
-      <h6>CEO</h6>
-      <h3>Sarath Raj</h3>
-      <div class="CEOline"></div>
-    </div>
-
-    <div class="column-ceo">
-      <div class="ceoiconbackground">
-        <div class="CEOIconWrapper">
-          <img src="images/varghese.png" alt="" class="services-icon">
-        </div>
-      </div>
-      <h6>CEO</h6>
-      <h3>Varghese</h3>
-      <div class="CEOline"></div>
-    </div>
-
-  </div>
-
-  <div class="vertical-space"></div>
-  <div class="get-contact-background-box" id="get-contact-background-box"> </div>
-  <div class="get-contact" id="get-contact">
-    <div class="get-contact-content-wrapper">
-      <h2>Get A Free Quote </h2>
-      <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
-        <label for="name" class="form__label">Name</label>
+        <div class="submit"></div>
+        <a href="#" class="btn">Submit Request</a>
       </div>
 
-      <div class="form__group field">
-        <input type="email" class="form__field" placeholder="Email" name="Email" id="Email" required />
-        <label for="Email" class="form__label">Email</label>
-
-      </div>
-
-      <div class="form__group field ">
-        <input type="phone" class="form__field" placeholder="phone" name="phone" id="phone" required />
-        <label for="phone" class="form__label">Phone</label>
-      </div>
-      <div class="submit"></div>
-      <a href="#" class="btn">Submit Request</a>
     </div>
+    <div class="vertical-space"></div>
 
-  </div>
-  <div class="vertical-space"></div>
-
-  <div class="yt-mobile">
-    <p align="center"><iframe id="mobile-yt" src="https://www.youtube.com/embed/VitaM1vfHZ0"></p>
-    </iframe>
-  </div>
-  <div class="comments-section">
-    <div class="yt">
-      <iframe width="420" height="315" src="https://www.youtube.com/embed/VitaM1vfHZ0">
+    <div class="yt-mobile">
+      <p align="center"><iframe id="mobile-yt" src="https://www.youtube.com/embed/VitaM1vfHZ0"></p>
       </iframe>
     </div>
-    <div class="comments">
-      <div class="wrapper">
-        <input checked type="radio" name="slider" id="slide1" />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-        <input type="radio" name="slider" id="slide4" />
+    <div class="comments-section">
+      <div class="yt">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/VitaM1vfHZ0">
+        </iframe>
+      </div>
+      <div class="comments">
+        <div class="wrapper">
+          <input checked type="radio" name="slider" id="slide1" />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
 
 
-        <div class="slider-wrapper">
-          <div class="inner">
-            <article>
-              <div class="customer-wrapper">
-                <div class="about-customer">
-                  <img src="images/customers/lal.jpg" alt="" class="services-icon">
-                  <h6>cine</h6>
-                  <h3>Lal Babu</h3>
+          <div class="slider-wrapper">
+            <div class="inner">
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img src="images/customers/lal.jpg" alt="" class="services-icon">
+                    <h6>cine</h6>
+                    <h3>Lal Babu</h3>
+                  </div>
+
+                  <p class="paragraph">SH Media has been nothing but unbelievably great. You've earned a customer! Wow,
+                    thank you!
+                    Great collection of foreign and video brands..</p>
+                  <img src="images/quote.svg" height="100px">
+                </div>
+              </article>
+
+
+              <article>
+
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img src="images/customers/jacky.jpg" alt="" class="services-icon">
+                    <h6>Cini camera man</h6>
+                    <h3>jacky</h3>
+                  </div>
+
+                  <p class="paragraph">Our system was installed two years ago and we are happy with the results.
+                    Finally,
+                    on the couple of occasions we have had to contact SH Media with questions or possible upgrade, he
+                    has
+                    replied timely. </p>
+                  <img src="images/quote.svg" height="100px">
                 </div>
 
-                <p class="paragraph">SH Media has been nothing but unbelievably great. You've earned a customer! Wow,
-                  thank you!
-                  Great collection of foreign and video brands..</p>
-                <img src="images/quote.svg" height="100px">
-              </div>
-            </article>
+              </article>
 
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img src="images/customers/binoy.jpg" alt="" class="services-icon">
+                    <h6>sports council coach</h6>
+                    <h3>Binoj Johny</h3>
+                  </div>
 
-            <article>
-
-              <div class="customer-wrapper">
-                <div class="about-customer">
-                  <img src="images/customers/jacky.jpg" alt="" class="services-icon">
-                  <h6>Cini camera man</h6>
-                  <h3>jacky</h3>
+                  <p class="paragraph">
+                    I love buying from SH Media. The support is incredible, great website - I am impressed! Great
+                    company.
+                    The most beautiful work in the lowest price when compared to similar areas SH Media is able to
+                    complete the work in given time.
+                  </p>
+                  <img src="images/quote.svg" height="100px">
                 </div>
+              </article>
 
-                <p class="paragraph">Our system was installed two years ago and we are happy with the results. Finally,
-                  on the couple of occasions we have had to contact SH Media with questions or possible upgrade, he has
-                  replied timely. </p>
-                <img src="images/quote.svg" height="100px">
-              </div>
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img src="images/customers/wilfred.jpg" alt="" class="services-icon">
+                    <h6>customer</h6>
+                    <h3>Wilfred Martin</h3>
+                  </div>
 
-            </article>
-
-            <article>
-              <div class="customer-wrapper">
-                <div class="about-customer">
-                  <img src="images/customers/binoy.jpg" alt="" class="services-icon">
-                  <h6>sports council coach</h6>
-                  <h3>Binoj Johny</h3>
+                  <p class="paragraph">In the theatre room in my house there was much more Echo... I approached Smart
+                    Home
+                    Digital Media to find a solution for this.
+                    Their expert sound engineers made it very beautiful.Great work! Good installation, Audio and video
+                    is
+                    mind blowing.</p>
+                  <img src="images/quote.svg" height="100px">
                 </div>
+              </article>
 
-                <p class="paragraph">
-                  I love buying from SH Media. The support is incredible, great website - I am impressed! Great company.
-                  The most beautiful work in the lowest price when compared to similar areas SH Media is able to
-                  complete the work in given time.
-                </p>
-                <img src="images/quote.svg" height="100px">
-              </div>
-            </article>
-
-            <article>
-              <div class="customer-wrapper">
-                <div class="about-customer">
-                  <img src="images/customers/wilfred.jpg" alt="" class="services-icon">
-                  <h6>customer</h6>
-                  <h3>Wilfred Martin</h3>
-                </div>
-
-                <p class="paragraph">In the theatre room in my house there was much more Echo... I approached Smart Home
-                  Digital Media to find a solution for this.
-                  Their expert sound engineers made it very beautiful.Great work! Good installation, Audio and video is
-                  mind blowing.</p>
-                <img src="images/quote.svg" height="100px">
-              </div>
-            </article>
-
+            </div>
+            <!-- .inner -->
           </div>
-          <!-- .inner -->
-        </div>
-        <!-- .slider-wrapper -->
+          <!-- .slider-wrapper -->
 
-        <div class="slider-prev-next-control">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
-        </div>
-        <!-- .slider-prev-next-control -->
+          <div class="slider-prev-next-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <!-- .slider-prev-next-control -->
 
-        <div class="slider-dot-control">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-          <label for="slide4"></label>
+          <div class="slider-dot-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <!-- .slider-dot-control -->
         </div>
-        <!-- .slider-dot-control -->
+
       </div>
 
     </div>
 
-  </div>
-
-  <div class="vertical-space"></div>
+    <div class="vertical-space"></div>
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="navbar/styles.css" />
-  <script src="index.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="navbar/styles.css" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+  </body>
 
 </html>

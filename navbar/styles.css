@@ -8,7 +8,6 @@
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1.2rem;
 }
 
 .navbar-inverse {
@@ -35,21 +34,28 @@
   background-color: #202020;
 }
 
-.products-menu {
-  visibility: hidden;
-}
-
 .dropdown-images {
-  display: table;
-  width: 400%;
   visibility: visible;
+  float: right;
+  background-color: #202020;
+  height: auto;
+  width: 150px;
+  text-align: center;
 }
 
 .dropdown-images img {
-  float: left;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 20px 20px 10px 20px;
+}
+
+.dropdown-images h6 {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.products-menu {
+  width: 410%;
+  background-color: violet;
 }
 
 .dropdown-menu > li > a:hover,
@@ -122,7 +128,4 @@
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
   border-bottom-color: #ffffff;
-}
-body {
-  background-color: #202020;
 }

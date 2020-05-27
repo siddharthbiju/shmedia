@@ -5,48 +5,98 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SH Digital Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="comments/comments.css">
   <link rel="stylesheet" href="form.css">
+  
 </head>
 
 <body onresize="resize()"> ​
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header
+      class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+      role="banner"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target=".bs-navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="logo3.png" height="30" alt="" />
+          </a>
+        </div>
+        <nav
+          class="collapse navbar-collapse bs-navbar-collapse"
+          role="navigation"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >services<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Home theatre</a></li>
+                <li><a href="#">home automation</a></li>
+              </ul>
+            </li>
 
-  <div class="phone-wrapper">
-    <img src="images/phone.svg" alt="" class="phone-icon" width="20" height="20" />
-  </div>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle " data-toggle="dropdown"
+                >Products<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu products-menu">
+                <div class="dropdown-images">
+                  <li><img src="images/products/amplifier.png" height="50px" /></li>
+                  <li><img src="images/products/projector.png" height="50px" /></li>
+                  <li><img src="images/products/speaker.png" height="50px" /></li>
+                  <li><img src="images/products/subwoofer.png" height="50px" /></li>
+                </div>
+              </ul>
+            </li>
 
-  <div class="nav-phone-text">+1 830 190 3018</div>
+            <li>
+              <a href="#">gallery</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <div role="navigation">
-    <div id="menuToggle">
-      <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <ul id="menu">
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#About-Us">
-          <li>About Us</li>
-        </a>
-        <a href="#">
-          <li>Services</li>
-        </a>
-        <a href="#">
-          <li>Products</li>
-        </a>
-        <a href="#">
-          <li>Gallery</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-      </ul>
-    </div>
-  </div>
+
 
   <div class="hero-wrapper">
     <div class="hero-text-wrapper">
@@ -284,10 +334,10 @@
   </div>
   <div class="vertical-space"></div>
 
-<div class="yt-mobile">
-  <p align="center"><iframe id = "mobile-yt" src="https://www.youtube.com/embed/VitaM1vfHZ0"></p>
-  </iframe>
-</div>
+  <div class="yt-mobile">
+    <p align="center"><iframe id="mobile-yt" src="https://www.youtube.com/embed/VitaM1vfHZ0"></p>
+    </iframe>
+  </div>
   <div class="comments-section">
     <div class="yt">
       <iframe width="420" height="315" src="https://www.youtube.com/embed/VitaM1vfHZ0">
@@ -399,8 +449,10 @@
 
 
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="navbar/styles.css" />
   <script src="index.js"></script>
 </body>
 

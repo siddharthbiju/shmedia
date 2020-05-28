@@ -89,6 +89,9 @@
     .products-menu{
         height: 300px;
     }
+    .dropdown-images{
+        pointer-events: none;
+    }
 }
 
 .dropdown-menu>li>a:hover,

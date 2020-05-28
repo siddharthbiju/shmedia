@@ -8,672 +8,693 @@
  * production code, beware of the browser
  * prefixes.
  */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-  color: #cdcdcd;
-  font-family: Exo, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #cdcdcd;
+    font-family: Exo, sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #7e6c3e;
+    color: #7e6c3e;
 }
 
 .hero-wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -100px;
-  padding: 100px 50px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -100px;
+    padding: 100px 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 .hero-title {
-  max-width: 720px;
-  font-family: Exo, sans-serif;
+    max-width: 720px;
+    font-family: Exo, sans-serif;
 }
 
 .hero-text-wrapper {
-  position: relative;
-  display: flex;
-  padding-top: 200px;
-  padding-bottom: 100px;
-  flex-direction: column;
-  align-items: center;
-  color: #f5f5f5;
-  text-align: center;
+    position: relative;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f5f5;
+    text-align: center;
 }
 
 #video-bg {
-  position: relative;
-  width: auto;
-  min-width: 100%;
-  height: auto;
-  background: transparent url(video-bg.jpg) no-repeat;
-  background-size: cover;
+    position: relative;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    background: transparent url(video-bg.jpg) no-repeat;
+    background-size: cover;
 }
+
 video {
-  display: block;
+    display: block;
 }
+
 .video-container {
-  width: 100%;
-  max-height: 900px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -100;
+    width: 100%;
+    max-height: 900px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
 }
 
 h1 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  line-height: 150%;
-  text-transform: capitalize;
-  font-size: 38px;
-  margin: 0.67em 0;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: 150%;
+    text-transform: capitalize;
+    font-size: 38px;
+    margin: 0.67em 0;
 }
 
 .btn {
-  background-color: #ac9455;
-  border: none;
-  color: white;
-  padding: 16px 100px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
+    background-color: #ac9455;
+    border: none;
+    color: white;
+    padding: 16px 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #7e6c3e;
-  color: white;
+    background-color: #7e6c3e;
+    color: white;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 
 /* Container for flexboxes */
+
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
+
 /* Create four equal columns */
+
 .column {
-  text-align: center;
-  font-family: Exo, sans-serif;
-  font-weight: normal;
-  color: #fff;
-  background-color: #202020;
-  flex: 25%;
-  padding: 20px;
-  width: 20%;
-  height: auto;
+    text-align: center;
+    font-family: Exo, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    background-color: #202020;
+    flex: 25%;
+    padding: 20px;
+    width: 20%;
+    height: auto;
 }
 
 .column:hover {
-  background-color: #1b1b1b;
+    background-color: #1b1b1b;
 }
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
+
 @media screen and (max-width: 1150px) {
-  .column {
-    width: 50%;
-    flex: 50%;
-  }
+    .column {
+        width: 50%;
+        flex: 50%;
+    }
 }
 
+
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
-  .row {
-    width: 92%;
-  }
-  .column {
-    flex: 100%;
-  }
+    .row {
+        width: 92%;
+    }
+    .column {
+        flex: 100%;
+    }
 }
 
 h6 {
-  margin-top: 0px;
-  margin-bottom: 7px;
-  color: #ac9455;
-  font-size: 12.5px;
-  line-height: 22.5px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    color: #ac9455;
+    font-size: 12.5px;
+    line-height: 22.5px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
 }
 
 h3 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  line-height: 150%;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: 150%;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 24px;
 }
 
 .service-text {
-  margin-bottom: 100px;
-  opacity: 0.75;
-  line-height: 25px;
+    margin-bottom: 100px;
+    opacity: 0.75;
+    line-height: 25px;
 }
 
 .Servicesline {
-  width: 1px;
-  height: 10%;
-  margin: auto;
-  background-color: hsla(0, 0%, 96.1%, 0.1);
+    width: 1px;
+    height: 10%;
+    margin: auto;
+    background-color: hsla(0, 0%, 96.1%, 0.1);
 }
 
 .serviceiconbackground {
-  margin: auto;
-  margin-top: 30px;
-  width: 150px;
-  height: 150px;
-  padding: 25px;
-  border-radius: 100%;
-  background-color: hsla(0, 0%, 100%, 0.1);
-  transform: scale(1);
-  transition: 0.3s all ease;
+    margin: auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 100%;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    transform: scale(1);
+    transition: 0.3s all ease;
 }
 
 .serviceiconbackground:hover {
-  padding: 0px;
+    padding: 0px;
 }
 
 .ServiceIconWrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  background-color: #ac9455;
-  box-shadow: 0 0 50px -25px rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #ac9455;
+    box-shadow: 0 0 50px -25px rgba(0, 0, 0, 0.5);
 }
 
 .serviceiconbackground img {
-  transition: all 0.3s;
-  transform: scale(1);
+    transition: all 0.3s;
+    transform: scale(1);
 }
 
 .serviceiconbackground:hover img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .btn-services {
-  color: #ac9455;
-  text-align: center;
-  font-size: 12.5px;
-  height: 50px;
-  font-weight: 550;
+    color: #ac9455;
+    text-align: center;
+    font-size: 12.5px;
+    height: 50px;
+    font-weight: 550;
 }
 
 .btn-services:hover {
-  color: #7e6c3e;
-  cursor: pointer;
+    color: #7e6c3e;
+    cursor: pointer;
 }
 
 .btn-container {
-  display: flex;
-  margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
 }
+
 @media screen and (max-width: 400px) {
-  .readbtn {
-    padding: 20px 70px;
-  }
+    .readbtn {
+        padding: 20px 70px;
+    }
 }
 
 .More-service-wrapper {
-  position: relative;
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  flex-direction: column;
-  align-items: center;
-  color: #f5f5f5;
-  text-align: center;
+    position: relative;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f5f5;
+    text-align: center;
 }
 
 .about {
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
-  left: 0;
-  right: 0;
-  width: 80%;
-  max-width: 960px;
-  text-align: center;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    max-width: 960px;
+    text-align: center;
 }
 
 .service-background-box {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  width: 25%;
-  height: 600px;
-  background-color: #ac9455;
-  z-index: -10;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 25%;
+    height: 600px;
+    background-color: #ac9455;
+    z-index: -10;
 }
 
 @media screen and (max-width: 921px) {
-  .service-background-box {
-    min-width: 300px;
-  }
+    .service-background-box {
+        min-width: 300px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-  .service-background-box {
-    min-width: 250px;
-  }
+    .service-background-box {
+        min-width: 250px;
+    }
 }
 
 .about-content-wrapper {
-  padding: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 100px -50px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 100px -50px rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 600px) {
-  .about-content-wrapper {
-    padding: 4%;
-  }
+    .about-content-wrapper {
+        padding: 4%;
+    }
 }
 
 h2 {
-  font-family: Exo, sans-serif;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  line-height: 150%;
-  font-weight: 650;
-  color: #151515;
-  font-size: 32px;
-  text-transform: capitalize;
+    font-family: Exo, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 150%;
+    font-weight: 650;
+    color: #151515;
+    font-size: 32px;
+    text-transform: capitalize;
 }
 
 .DesText {
-  font-family: Exo, sans-serif;
-  font-weight: 400;
-  color: #6c6c6c;
+    font-family: Exo, sans-serif;
+    font-weight: 400;
+    color: #6c6c6c;
 }
 
 .AboutDescription {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: Exo, sans-serif;
-  line-height: 25px;
-  color: #000000;
-  font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Exo, sans-serif;
+    line-height: 25px;
+    color: #000000;
+    font-weight: 300;
 }
 
 .vertical-space {
-  width: 100%;
-  height: 80px;
-  background: #0000;
+    width: 100%;
+    height: 80px;
+    background: #0000;
 }
 
 .work-section {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .work-section img {
-  width: 200px;
-  height: 400px;
+    width: 200px;
+    height: 400px;
 }
 
 .row-work {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
+
 /* Create four equal columns */
+
 .column-work {
-  position: relative;
-  flex: 25%;
-  width: 20%;
-  height: auto;
-  overflow: hidden;
-  display: inline-block;
+    position: relative;
+    flex: 25%;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .column-work img {
-  width: 100%;
-  max-height: 100%;
-  margin: auto;
-  display: block;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
 }
 
 .column-work:hover img,
 .column-work:focus img {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
+
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
+
 @media screen and (max-width: 1402px) {
-  .column-work {
-    width: 50%;
-    flex: 50%;
-  }
+    .column-work {
+        width: 50%;
+        flex: 50%;
+    }
 }
 
+
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 790px) {
-  .row-work {
-    width: 100%;
-  }
-  .column-work {
-    width: 100%;
-    flex: 100%;
-  }
+    .row-work {
+        width: 100%;
+    }
+    .column-work {
+        width: 100%;
+        flex: 100%;
+    }
 }
 
 .work-description {
-  width: 80%;
-  height: 20%;
-  background-color: #ffffff;
-  position: absolute;
-  bottom: 0.01%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-top: 8px;
+    width: 80%;
+    height: 20%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0.01%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 8px;
 }
 
 .work-description:hover {
-  background-color: #202020;
-  transition: background-color 200ms linear;
+    background-color: #202020;
+    transition: background-color 200ms linear;
 }
 
 .work-description:hover h4 {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .h6-work {
-  font-weight: 600;
-  width: 100%;
-  max-width: 320px;
-  margin-bottom: 6.75px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 6.75px;
 }
 
 h4 {
-  margin-top: 0px;
-  margin-bottom: 25px;
-  line-height: 150%;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: bold;
-  box-sizing: border-box;
-  color: #383838;
-  font-family: Exo, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    line-height: 150%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #383838;
+    font-family: Exo, sans-serif;
 }
 
 .row-partners {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .column-partners {
-  background-color: #000000;
-  flex: 25%;
-  padding: 40px;
-  width: 20%;
-  height: auto;
+    background-color: #000000;
+    flex: 25%;
+    padding: 40px;
+    width: 20%;
+    height: auto;
 }
 
 .column-partners img {
-  margin: auto;
-  display: block;
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
+    margin: auto;
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 1300px) {
-  .column-partners {
-    min-width: 50%;
-    flex: 50%;
-  }
+    .column-partners {
+        min-width: 50%;
+        flex: 50%;
+    }
 }
 
 @media screen and (max-width: 750px) {
-  .column-partners img {
-    max-height: 50px;
-    width: 90%;
-    height: 90%;
-  }
+    .column-partners img {
+        max-height: 50px;
+        width: 90%;
+        height: 90%;
+    }
 }
 
 .row-ceo {
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .row-ceo h6 {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .row-ceo h3 {
-  color: #151515;
-  margin-bottom: 30px;
+    color: #151515;
+    margin-bottom: 30px;
 }
 
 .column-ceo {
-  text-align: center;
-  font-family: Exo, sans-serif;
-  font-weight: normal;
-  color: #fff;
-  flex: 25%;
-  padding: 20px;
-  width: 20%;
-  height: auto;
+    text-align: center;
+    font-family: Exo, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    flex: 25%;
+    padding: 20px;
+    width: 20%;
+    height: auto;
 }
+
 .ceoiconbackground {
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 150px;
-  height: 150px;
-  padding: 25px;
-  border-radius: 100%;
-  background-color: #d3d3d3;
-  transform: scale(1);
-  transition: 0.2s all ease;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 100%;
+    background-color: #d3d3d3;
+    transform: scale(1);
+    transition: 0.2s all ease;
 }
 
 .CEOIconWrapper img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    margin: 0 auto;
 }
 
 .ceoiconbackground:hover {
-  padding: 0.5px;
+    padding: 0.5px;
 }
 
 @media screen and (max-width: 1150px) {
-  .column-ceo {
-    width: 50%;
-    flex: 50%;
-  }
+    .column-ceo {
+        width: 50%;
+        flex: 50%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .row-ceo {
-    width: 92%;
-  }
-  .column-ceo {
-    flex: 100%;
-  }
+    .row-ceo {
+        width: 92%;
+    }
+    .column-ceo {
+        flex: 100%;
+    }
 }
 
 .CEOline {
-  width: 80%;
-  height: 1px;
-  margin: auto;
-  background-color: #d3d3d3;
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background-color: #d3d3d3;
 }
 
 .comments-section {
-  height: 500px;
-  width: 100%;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .yt-mobile {
-  width: 100%;
-  margin: 0 auto;
-  display: none;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
 }
 
 .yt-mobile iframe {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .yt {
-  width: 65%;
-  height: 100%;
-  float: left;
+    width: 65%;
+    height: 100%;
+    float: left;
 }
 
 .yt iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .comments {
-  width: 35%;
-  height: 100%;
-  float: left;
+    width: 35%;
+    height: 100%;
+    float: left;
 }
 
 @media screen and (max-width: 1069px) {
-  .comments {
-    width: 100%;
-  }
-  .yt {
-    display: none;
-  }
-  .yt-mobile {
-    display: block;
-  }
+    .comments-section {
+        width: 100%;
+    }
+    .comments {
+        width: 100%;
+    }
+    .yt {
+        display: none;
+    }
+    .yt-mobile {
+        display: block;
+    }
 }
 
 .get-contact {
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 80px;
-  left: 0;
-  right: 0;
-  width: 80%;
-  max-width: 960px;
-  text-align: center;
-  background-color: #d3d3d3;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    left: 0;
+    right: 0;
+    width: 80%;
+    max-width: 960px;
+    text-align: center;
+    background-color: #d3d3d3;
 }
 
 .submit {
-  width: 100%;
-  height: 30px;
+    width: 100%;
+    height: 30px;
 }
 
 .get-contact-content-wrapper {
-  padding: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 100px -50px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 100px -50px rgba(0, 0, 0, 0.5);
 }
 
 .get-contact-content-wrapper h2 {
-  text-transform: none;
+    text-transform: none;
 }
 
 .get-contact-background-box {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  width: 25%;
-  height: 600px;
-  background-color: #ac9455;
-  z-index: -10;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 25%;
+    height: 600px;
+    background-color: #ac9455;
+    z-index: -10;
 }
 
 @media screen and (max-width: 536px) {
-  .get-contact {
-    width: 92%;
-  }
-
-  .get-contact .btn {
-    padding: 16px;
-  }
-  .get-contact-content-wrapper {
-    padding: 0px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-  }
-  .form__group {
-    width: 80%;
-  }
+    .get-contact {
+        width: 92%;
+    }
+    .get-contact .btn {
+        padding: 16px;
+    }
+    .get-contact-content-wrapper {
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .form__group {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 921px) {
-  .get-contact-background-box {
-    min-width: 300px;
-  }
+    .get-contact-background-box {
+        min-width: 300px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-  .get-contact-background-box {
-    min-width: 250px;
-  }
+    .get-contact-background-box {
+        min-width: 250px;
+    }
 }

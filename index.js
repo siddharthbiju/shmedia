@@ -4,6 +4,7 @@ let mobileyt = document.getElementById("mobile-yt").clientWidth;
 let pcytheight = document.getElementById("slider-wrapper").clientHeight;
 mobileyt = (mobileyt * 9) / 16;
 h = h + 160;
+aboutImageHeight = h - 40;
 conh = conh + 160;
 document
     .getElementById("service-background-box")
@@ -19,6 +20,14 @@ document
 document
     .getElementById("comments-section")
     .setAttribute("style", "height:" + pcytheight + "px");
+
+document
+    .getElementById("about-images")
+    .setAttribute("style", "height:" + aboutImageHeight + "px");
+
+document
+    .getElementById("about-images-2")
+    .setAttribute("style", "height:" + aboutImageHeight + "px");
 
 function resize() {
     h = document.getElementById("about").clientHeight;
@@ -43,10 +52,10 @@ function resize() {
 }
 if ($(window).width() > 1024) {
     $(".navbar .dropdown").hover(
-        function() {
+        function () {
             $(this).find(".dropdown-menu").first().stop(true, true).slideDown(300);
         },
-        function() {
+        function () {
             $(this).find(".dropdown-menu").first().stop(true, true).slideUp(300);
         }
     );

@@ -300,7 +300,7 @@ h3 {
     margin-right: auto;
     left: 0;
     right: 0;
-    width: 25%;
+    width: 30%;
     height: 600px;
     background-color: #ac9455;
     z-index: -10;
@@ -317,6 +317,33 @@ h3 {
         min-width: 250px;
     }
 }
+
+
+.about-images {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 65%;
+    height: 600px;
+    z-index: -5;
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 921px) {
+    .about-images {
+        visibility: hidden;
+    }
+}
+
+.about-image-2{
+    float: right;
+}
+
+
 
 .about-content-wrapper {
     padding: 50px;

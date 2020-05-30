@@ -5,80 +5,108 @@ let pcytheight = document.getElementById("slider-wrapper").clientHeight;
 let aboutWidth = document.getElementById("about").clientHeight;
 aboutWidth = aboutWidth * 2;
 console.log(aboutWidth);
+let reach = 0;
+
+const element = document.querySelector('.row-partners');
+element.classList.add('animate__animated', 'animate__bounceOutLeft');
 
 mobileyt = (mobileyt * 9) / 16;
 h = h + 160;
 aboutImageHeight = h - 40;
 conh = conh + 160;
 document
-  .getElementById("service-background-box")
-  .setAttribute("style", "height:" + h + "px");
-document
-  .getElementById("get-contact-background-box")
-  .setAttribute("style", "height:" + conh + "px");
-
-document
-  .getElementById("mobile-yt")
-  .setAttribute("style", "height:" + mobileyt + "px");
-
-document
-  .getElementById("comments-section")
-  .setAttribute("style", "height:" + pcytheight + "px");
-
-document
-  .getElementById("about-images")
-  .setAttribute("style", "height:" + aboutImageHeight + "px");
-
-document
-  .getElementById("about-images-2")
-  .setAttribute("style", "height:" + aboutImageHeight + "px");
-
-document
-  .getElementById("about-images-container")
-  .setAttribute("style", "width:" + aboutWidth + "px");
-
-function resize() {
-  h = document.getElementById("about").clientHeight;
-  conh = document.getElementById("get-contact").clientHeight;
-  mobileyt = document.getElementById("mobile-yt").clientWidth;
-  pcytheight = document.getElementById("slider-wrapper").clientHeight;
-  aboutWidth = document.getElementById("about").clientHeight;
-  aboutWidth = aboutWidth * 2;
-  h = h + 160;
-  aboutImageHeight = h - 40;
-  conh = conh + 160;
-  mobileyt = (mobileyt * 9) / 16;
-  document
     .getElementById("service-background-box")
     .setAttribute("style", "height:" + h + "px");
-  document
+document
     .getElementById("get-contact-background-box")
     .setAttribute("style", "height:" + conh + "px");
-  document
+
+document
     .getElementById("mobile-yt")
     .setAttribute("style", "height:" + mobileyt + "px");
-  document
+
+document
     .getElementById("comments-section")
     .setAttribute("style", "height:" + pcytheight + "px");
-  document
+
+document
     .getElementById("about-images")
     .setAttribute("style", "height:" + aboutImageHeight + "px");
 
-  document
+document
     .getElementById("about-images-2")
     .setAttribute("style", "height:" + aboutImageHeight + "px");
 
-  document
+document
     .getElementById("about-images-container")
     .setAttribute("style", "width:" + aboutWidth + "px");
+
+function resize() {
+    h = document.getElementById("about").clientHeight;
+    conh = document.getElementById("get-contact").clientHeight;
+    mobileyt = document.getElementById("mobile-yt").clientWidth;
+    pcytheight = document.getElementById("slider-wrapper").clientHeight;
+    aboutWidth = document.getElementById("about").clientHeight;
+    aboutWidth = aboutWidth * 2;
+    h = h + 160;
+    aboutImageHeight = h - 40;
+    conh = conh + 160;
+    mobileyt = (mobileyt * 9) / 16;
+    document
+        .getElementById("service-background-box")
+        .setAttribute("style", "height:" + h + "px");
+    document
+        .getElementById("get-contact-background-box")
+        .setAttribute("style", "height:" + conh + "px");
+    document
+        .getElementById("mobile-yt")
+        .setAttribute("style", "height:" + mobileyt + "px");
+    document
+        .getElementById("comments-section")
+        .setAttribute("style", "height:" + pcytheight + "px");
+    document
+        .getElementById("about-images")
+        .setAttribute("style", "height:" + aboutImageHeight + "px");
+
+    document
+        .getElementById("about-images-2")
+        .setAttribute("style", "height:" + aboutImageHeight + "px");
+
+    document
+        .getElementById("about-images-container")
+        .setAttribute("style", "width:" + aboutWidth + "px");
 }
 if ($(window).width() > 1024) {
-  $(".navbar .dropdown").hover(
-    function () {
-      $(this).find(".dropdown-menu").first().stop(true, true).slideDown(300);
-    },
-    function () {
-      $(this).find(".dropdown-menu").first().stop(true, true).slideUp(300);
-    }
-  );
+    $(".navbar .dropdown").hover(
+        function () {
+            $(this).find(".dropdown-menu").first().stop(true, true).slideDown(300);
+        },
+        function () {
+            $(this).find(".dropdown-menu").first().stop(true, true).slideUp(300);
+        }
+    );
 }
+
+
+
+
+
+$(document).on('scroll', function () {
+    if (reach == 0) {
+        if ($(this).scrollTop() >= $('#reached').position().top) {
+            reach = 1;
+            element.classList.add('animate__animated', 'animate__slideInRight');
+
+        }
+    }
+})
+
+$(document).on('scroll', function () {
+    if (reach == 0) {
+        if ($(this).scrollTop() >= $('#row-partners').position().top) {
+            reach = 1;
+            element.classList.add('animate__animated', 'animate__slideInRight');
+
+        }
+    }
+})

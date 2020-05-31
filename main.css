@@ -21,6 +21,15 @@ body {
   font-family: Exo, sans-serif;
 }
 
+@media screen and (max-width: 400px) {
+  .sh-navbar{
+    min-width: 100%;
+  }
+}
+
+
+
+
 a {
   text-decoration: none;
   color: #ffffff;

@@ -1,167 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .navbar-brand {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar .nav {
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .navbar-inverse {
-    background-color: #202020;
+  background-color: #202020;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    background-color: #202020;
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #202020;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-    background-color: #202020;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #202020;
 }
 
 .dropdown-menu {
-    background-color: #202020;
+  background-color: #202020;
 }
 
 .dropdown-images {
-    visibility: visible;
-    float: left;
-    background-color: #202020;
-    height: auto;
-    width: 150px;
-    text-align: center;
+  visibility: visible;
+  float: left;
+  background-color: #202020;
+  height: auto;
+  width: 150px;
+  text-align: center;
 }
 
 .image-line {
-    width: 2px;
-    height: 30px;
-    margin: auto;
-    background-color: hsla(0, 0%, 96.1%, 0.1);
+  width: 2px;
+  height: 30px;
+  margin: auto;
+  background-color: hsla(0, 0%, 96.1%, 0.1);
 }
 
 .hover-line {
-    width: 100%;
-    height: 3px;
-    background-color: #A99254;
-    visibility: hidden;
+  width: 100%;
+  height: 3px;
+  background-color: #a99254;
+  visibility: hidden;
 }
 
 .dropdown-images img {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .dropdown-images h6 {
-    font-family: Exo, sans-serif;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    color: white;
+  font-family: Exo, sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: white;
 }
 
 .dropdown-images:hover {
-    background-color: #1b1b1b;
-    cursor: pointer;
+  background-color: #1b1b1b;
+  cursor: pointer;
 }
 
 .dropdown-images:hover .hover-line {
-    visibility: visible;
+  visibility: visible;
 }
 
 .products-menu {
-    width: 440%;
-    visibility: hidden;
+  width: 550%;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 629px) {
-    .products-menu{
-        height: 300px;
-    }
-    .dropdown-images{
-        pointer-events: none;
-    }
+  .products-menu {
+    height: 520px;
+  }
+  .dropdown-images {
+    pointer-events: none;
+  }
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    background-color: #202020;
-}
-
-.navbar-inverse {
-    background-image: none;
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    background-image: none;
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #202020;
 }
 
 .navbar-inverse {
-    border-color: #003300;
+  background-image: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-image: none;
+}
+
+.navbar-inverse {
+  border-color: #003300;
 }
 
 .navbar-inverse .navbar-brand {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-brand:hover {
-    color: #ac9455;
+  color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: #ffffff;
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-    color: #ac9455;
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-    color: #ac9455;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
-    color: #ac9455;
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ac9455;
 }
 
-.dropdown-menu>li>a {
-    color: #ffffff;
+.dropdown-menu > li > a {
+  color: #ffffff;
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-    color: #ac9455;
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
-    border-top-color: #ffffff;
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
-    border-top-color: #ffffff;
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
-    border-bottom-color: #ffffff;
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-bottom-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
-    border-bottom-color: #ffffff;
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-bottom-color: #ffffff;
 }

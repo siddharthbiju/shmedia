@@ -77,7 +77,6 @@ function resize() {
     .setAttribute("style", "width:" + aboutWidth + "px");
 }
 
-<<<<<<< HEAD
 $(document).ready(function () {
   $(".dropdown").hover(
     function () {
@@ -89,16 +88,6 @@ $(document).ready(function () {
     function () {
       $("dropdown-images.dropdown-menu", this).stop(true, true).slideUp("fast");
       $(this).removeClass("open");
-=======
-
-$(document).on('scroll', function () {
-    if (reach == 0) {
-        if ($(this).scrollTop() >= $('#reached').position().top) {
-            reach = 1;
-            element.classList.add('animate__animated', 'animate__slideInRight');
-
-        }
->>>>>>> 4e02c88f4639a59b4e64452b2fa0c1de6de55acd
     }
   );
 });

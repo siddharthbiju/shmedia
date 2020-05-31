@@ -336,9 +336,12 @@ h3 {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 921px) {
+@media screen and (max-width: 1006px) {
   .about-images {
     visibility: hidden;
+  }
+  .about-images img {
+    width: 10%;
   }
 }
 
@@ -547,7 +550,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.CEO-SOCIAL{
+.CEO-SOCIAL {
   margin-bottom: 15px;
 }
 

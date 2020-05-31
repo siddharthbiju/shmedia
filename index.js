@@ -88,9 +88,6 @@ if ($(window).width() > 1024) {
 }
 
 
-
-
-
 $(document).on('scroll', function () {
     if (reach == 0) {
         if ($(this).scrollTop() >= $('#reached').position().top) {

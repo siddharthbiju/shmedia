@@ -8,6 +8,11 @@
   flex: 1;
 }
 
+body {
+  color: #cdcdcd;
+  font-family: Exo, sans-serif;
+}
+
 .hero-text-wrapper {
   position: relative;
   display: flex;
@@ -234,4 +239,42 @@ h3 {
     float: left;
     width: 100%;
   }
+}
+
+.end-black {
+  background-color: #202020;
+  width: 100%;
+  height: 150px;
+  padding-left: 10px;
+  padding-top: 40px;
+}
+
+.footer-nav-link {
+  height: 50px;
+  padding: 12.5px;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Exo, sans-serif;
+  font-size: 15px;
+}
+
+.footer-nav-link:hover {
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.end-black p {
+  margin-top: 15px;
+}
+
+.espy {
+  color: #7e6c3e;
+}
+
+.end-black p a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ac9455;
 }

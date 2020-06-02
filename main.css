@@ -712,17 +712,14 @@ h4 {
 .end-black {
   background-color: #202020;
   width: 100%;
-  height: 100px;
+  height: 150px;
   padding-left: 10px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
-
-.social-links {}
 
 .footer-nav-link {
   height: 50px;
   padding: 12.5px;
-  color: #fff;
   line-height: 25px;
   font-weight: 600;
   text-align: center;
@@ -734,4 +731,18 @@ h4 {
 .footer-nav-link:hover {
   text-decoration: none;
   transition: color 200ms ease;
+}
+
+.end-black p {
+  margin-top: 15px;
+}
+
+.espy {
+  color: #7e6c3e;
+}
+
+.end-black p a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ac9455;
 }

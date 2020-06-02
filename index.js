@@ -2,21 +2,30 @@ let h = document.getElementById("about").clientHeight;
 let conh = document.getElementById("get-contact").clientHeight;
 let mobileyt = document.getElementById("mobile-yt").clientWidth;
 let pcytheight = document.getElementById("slider-wrapper").clientHeight;
-let aboutWidth = document.getElementById("about").clientHeight;
-aboutWidth = aboutWidth * 2.3;
-console.log(aboutWidth);
+let about_backgroud_width = document.getElementById("about").clientWidth;
 let reach = 0;
 
-const element = document.querySelector(".row-partners");
-element.classList.add("animate__animated", "animate__bounceOutLeft");
 
+about_backgroud_width = about_backgroud_width * .7
 mobileyt = (mobileyt * 9) / 16;
 h = h + 160;
 aboutImageHeight = h - 40;
 conh = conh + 160;
-document
-  .getElementById("service-background-box")
-  .setAttribute("style", "height:" + h + "px");
+
+
+
+const element = document.querySelector(".row-partners");
+element.classList.add("animate__animated", "animate__bounceOutLeft");
+
+
+
+document.getElementById("service-background-box").style.height = h + "px";
+document.getElementById("service-background-box").style.width = about_backgroud_width + "px";
+
+let about_images_width = document.getElementById("service-background-box").clientWidth;
+about_images_width = about_images_width + 804;
+
+
 document
   .getElementById("get-contact-background-box")
   .setAttribute("style", "height:" + conh + "px");
@@ -38,23 +47,37 @@ document
   .setAttribute("style", "height:" + aboutImageHeight + "px");
 
 document
-  .getElementById("about-images-container")
-  .setAttribute("style", "width:" + aboutWidth + "px");
+  .getElementById("about-images-2")
+  .setAttribute("style", "height:" + aboutImageHeight + "px");
+
+document.getElementById("about-images-container").style.width = about_images_width + "px";
+
+
+
+
 
 function resize() {
   h = document.getElementById("about").clientHeight;
   conh = document.getElementById("get-contact").clientHeight;
   mobileyt = document.getElementById("mobile-yt").clientWidth;
   pcytheight = document.getElementById("slider-wrapper").clientHeight;
-  aboutWidth = document.getElementById("about").clientHeight;
-  aboutWidth = aboutWidth * 2.3;
+  about_backgroud_width = document.getElementById("about").clientWidth;
+  about_images_width = document.getElementById("service-background-box").clientWidth;
+
+
+  about_images_width = about_images_width + 804;
+
+  about_backgroud_width = about_backgroud_width * .7
   h = h + 160;
   aboutImageHeight = h - 40;
   conh = conh + 160;
   mobileyt = (mobileyt * 9) / 16;
-  document
-    .getElementById("service-background-box")
-    .setAttribute("style", "height:" + h + "px");
+
+
+
+  document.getElementById("service-background-box").style.height = h + "px";
+  document.getElementById("service-background-box").style.width = about_backgroud_width + "px";
+
   document
     .getElementById("get-contact-background-box")
     .setAttribute("style", "height:" + conh + "px");
@@ -72,9 +95,8 @@ function resize() {
     .getElementById("about-images-2")
     .setAttribute("style", "height:" + aboutImageHeight + "px");
 
-  document
-    .getElementById("about-images-container")
-    .setAttribute("style", "width:" + aboutWidth + "px");
+  document.getElementById("about-images-container").style.width = about_images_width + "px";
+
 }
 
 $(document).ready(function () {

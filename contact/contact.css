@@ -429,19 +429,73 @@ h2 {
     }
 }
 
-.maps {
-    width: 85%;
+.contact_Us iframe {
+    width: 600px;
+}
+
+.column h6 {
+    color: #202020;
+}
+
+.column p {
+    color: #6D6D6D;
+}
+
+.contact_details {
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+.column img {
+    float: left;
+    margin: 5px;
+}
+
+.column-container {
+    padding-left: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+    .contact_Us {
+        width: 100%;
+        flex: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
     margin: 0 auto;
 }
 
-.maps iframe {
-    width: 100%;
-    height: 700px;
+/* Create four equal columns */
+
+.column {
+    flex: 25%;
+    width: 20%;
+    height: auto;
 }
 
-@media screen and (max-width: 600px) {
-    .maps iframe {
-        width: 100%;
-        height: 500px;
+.column iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 753px) {
+    .row {
+        width: 92%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 650px) {
+    .column {
+        flex: 100%;
+    }
+    .column-container {
+        margin-top: 40px;
+        float: left;
+        padding-left: 20%;
     }
 }

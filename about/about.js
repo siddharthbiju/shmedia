@@ -64,7 +64,9 @@ function resize() {
     document.getElementById("about-images").style.height = aboutImageHeight + "px";
     document.getElementById("about-images-2").style.height = aboutImageHeight + "px";
 
+}
 
-
-
+function serviceClick() {
+    console.log("clicked");
+    window.location.href = "/services/services.html";
 }

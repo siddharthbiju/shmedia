@@ -27,3 +27,4 @@ function resize() {
         .getElementById("mobile-yt")
         .setAttribute("style", "height:" + mobileyt + "px");
 }
+

@@ -131,3 +131,8 @@ $(document).on("scroll", function () {
     }
   }
 });
+
+function serviceClick() {
+  console.log("clicked");
+  window.location.href = "/services/services.html";
+}

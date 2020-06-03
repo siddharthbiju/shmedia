@@ -67,17 +67,68 @@ function resize() {
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("image_full");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function () {
+
+i = 0;
+var f_src = document.getElementsByClassName("img-2");
+
+
+f_images[0].onclick = function () {
     modal.style.display = "block";
+    modalImg.src = f_src[0].src;
 }
+
+f_images[1].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[1].src;
+}
+
+f_images[2].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[2].src;
+}
+
+f_images[3].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[3].src;
+}
+
+f_images[4].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[4].src;
+}
+
+f_images[5].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[5].src;
+}
+
+f_images[6].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[6].src;
+}
+
+f_images[7].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[7].src;
+}
+
+f_images[8].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = f_src[8].src;
+}
+
+
+
+
+
+
+
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
 }

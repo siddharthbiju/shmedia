@@ -208,3 +208,22 @@ a:hover {
   background-color: #7e6c3e;
   color: white;
 }
+
+.slide-top-top {
+  animation: slide-top-top .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes slide-top-top {
+  0% {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.no-opacity {
+  opacity: 0;
+}

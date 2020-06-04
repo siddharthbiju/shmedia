@@ -818,7 +818,7 @@ h4 {
 @keyframes slide-right {
   0% {
     opacity: 1;
-    transform: translateX(-300px);
+    transform: translateX(-200px);
   }
   100% {
     transform: translateX(0);
@@ -833,7 +833,7 @@ h4 {
 @keyframes slide-left {
   0% {
     opacity: 1;
-    transform: translateX(300px);
+    transform: translateX(200px);
   }
   100% {
     transform: translateX(0);

@@ -144,14 +144,6 @@ const element3 = document.getElementById("column_featured2");
 const element4 = document.getElementById("column_featured3");
 
 
-/*
-$(document).on("scroll", function () {
-  if ($(this).scrollTop() >= $("#featured_products").position().top) {
-    element1.classList.add("fade-in");
-  }
-});*/
-
-
 if ($(window).width() >= 960) {
   $(window).scroll(function () {
     var hT = $('#featured_products').offset().top,
@@ -159,7 +151,6 @@ if ($(window).width() >= 960) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
     if (wS > (hT + hH - wH)) {
-      console.log('H1 on the view!');
       element1.classList.add("fade-in");
       element2.classList.add("slide-right");
       element3.classList.add("slide-bottom");
@@ -177,7 +168,6 @@ if ($(window).width() < 960) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
     if (wS > (hT + hH - wH)) {
-      console.log('H1 on the view!');
       element1.classList.add("fade-in");
     }
   });
@@ -188,7 +178,6 @@ if ($(window).width() < 960) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
     if (wS > (hT + hH - wH)) {
-      console.log('H1 on the view!');
       element2.classList.add("slide-right");
     }
   });
@@ -199,7 +188,6 @@ if ($(window).width() < 960) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
     if (wS > (hT + hH - wH)) {
-      console.log('H1 on the view!');
       element3.classList.add("slide-left");
     }
   });
@@ -211,9 +199,41 @@ if ($(window).width() < 960) {
       wH = $(window).height(),
       wS = $(this).scrollTop();
     if (wS > (hT + hH - wH)) {
-      console.log('H1 on the view!');
       element4.classList.add("slide-right");
     }
   });
 
 }
+
+
+const element5 = document.getElementById("gotop");
+
+$(window).scroll(function () {
+  var hT = $('#about').offset().top,
+    hH = $('#about').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > (hT + hH - wH)) {
+    element5.classList.add("slide-top-top");
+
+  }
+});
+
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function () {
+  if ($('#hero-title').isInViewport()) {
+    console.log("visible");
+    // element5.classList.add("slide-top-top");
+  } else {
+    // console.log("not visible");
+  }
+});

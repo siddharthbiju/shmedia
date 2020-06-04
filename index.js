@@ -136,3 +136,84 @@ function serviceClick() {
   console.log("clicked");
   window.location.href = "/services/services.html";
 }
+
+
+const element1 = document.getElementById("fade-in");
+const element2 = document.getElementById("column_featured1");
+const element3 = document.getElementById("column_featured2");
+const element4 = document.getElementById("column_featured3");
+
+
+/*
+$(document).on("scroll", function () {
+  if ($(this).scrollTop() >= $("#featured_products").position().top) {
+    element1.classList.add("fade-in");
+  }
+});*/
+
+
+if ($(window).width() >= 960) {
+  $(window).scroll(function () {
+    var hT = $('#featured_products').offset().top,
+      hH = $('#featured_products').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH)) {
+      console.log('H1 on the view!');
+      element1.classList.add("fade-in");
+      element2.classList.add("slide-right");
+      element3.classList.add("slide-bottom");
+      element4.classList.add("slide-left");
+    }
+  });
+
+}
+
+if ($(window).width() < 960) {
+
+  $(window).scroll(function () {
+    var hT = $('#fade-in').offset().top,
+      hH = $('#fade-in').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH)) {
+      console.log('H1 on the view!');
+      element1.classList.add("fade-in");
+    }
+  });
+
+  $(window).scroll(function () {
+    var hT = $('#column_featured1').offset().top,
+      hH = $('#column_featured1').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH)) {
+      console.log('H1 on the view!');
+      element2.classList.add("slide-right");
+    }
+  });
+
+  $(window).scroll(function () {
+    var hT = $('#column_featured2').offset().top,
+      hH = $('#column_featured2').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH)) {
+      console.log('H1 on the view!');
+      element3.classList.add("slide-left");
+    }
+  });
+
+
+  $(window).scroll(function () {
+    var hT = $('#column_featured3').offset().top,
+      hH = $('#column_featured3').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT + hH - wH)) {
+      console.log('H1 on the view!');
+      element4.classList.add("slide-right");
+    }
+  });
+
+}

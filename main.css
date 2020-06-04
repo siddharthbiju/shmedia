@@ -814,10 +814,12 @@ h4 {
 
 @keyframes slide-right {
   0% {
+    opacity: 1;
     transform: translateX(-300px);
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -827,10 +829,12 @@ h4 {
 
 @keyframes slide-left {
   0% {
+    opacity: 1;
     transform: translateX(300px);
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -840,10 +844,12 @@ h4 {
 
 @keyframes slide-bottom {
   0% {
+    opacity: 1;
     transform: translateY(-200px);
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 

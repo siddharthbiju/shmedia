@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .navbar-brand {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
+  font-family: Exo, sans-serif;
+}
+
+.free_nav:hover {
+  background-color: #7e6c3e;
+  color: white;
 }
 
 .navbar {
@@ -27,9 +31,7 @@
   background-color: #202020;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-  background-color: #202020;
-}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {}
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
   background-color: #202020;
@@ -127,17 +129,13 @@
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-  color: #ac9455;
-}
+.navbar-inverse .navbar-nav>.li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {}
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
   color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-  color: #ac9455;
-}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {}
 
 .dropdown-menu>li>a {
   color: #ffffff;
@@ -195,4 +193,18 @@ a:hover {
 
 #gotop:hover {
   cursor: pointer;
+}
+
+.free_nav {
+  background-color: #ac9455;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.free_nav:hover {
+  background-color: #7e6c3e;
+  color: white;
 }

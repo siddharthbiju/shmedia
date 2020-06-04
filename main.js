@@ -44,3 +44,13 @@ $(function ($) {
     }
   });
 })(jQuery);
+
+
+
+var top = document.getElementById("gotop");
+console.log(top);
+console.log("simple");
+
+top.onclick = function () {
+  console.log("clicked");
+}

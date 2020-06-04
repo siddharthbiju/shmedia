@@ -181,3 +181,18 @@
 a:hover {
   cursor: pointer;
 }
+
+#gotop {
+  position: fixed;
+  bottom: 10px;
+  right: 13px;
+  z-index: 10000;
+}
+
+#gotop img {
+  border-radius: 15px;
+}
+
+#gotop:hover {
+  cursor: pointer;
+}

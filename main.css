@@ -131,7 +131,7 @@ h1 {
   font-weight: normal;
   color: #fff;
   background-color: #202020;
-  flex: 25%;
+  flex: 20%;
   padding: 20px;
   width: 20%;
   height: auto;
@@ -146,7 +146,7 @@ h1 {
 @media screen and (max-width: 1150px) {
   .column {
     width: 50%;
-    flex: 50%;
+    flex: 40%;
   }
 }
 
@@ -482,12 +482,17 @@ h4 {
   margin: 0 auto;
 }
 
+.partner-black {
+  background-color: #000000;
+}
+
 .column-partners {
   background-color: #000000;
   flex: 25%;
   padding: 40px;
   width: 20%;
   height: auto;
+  opacity: 0;
 }
 
 .column-partners img {
@@ -510,6 +515,36 @@ h4 {
     max-height: 50px;
     width: 90%;
     height: 90%;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right 1s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 1s cubic-bezier(.25, .46, .45, .94) both
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 

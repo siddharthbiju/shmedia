@@ -13,11 +13,29 @@ aboutImageHeight = h - 40;
 conh = conh + 160;
 
 
-
+/*
 const element = document.querySelector(".row-partners");
 element.classList.add("animate__animated", "animate__bounceOutLeft");
 
+$(document).on("scroll", function () {
+  if (reach == 0) {
+    if ($(this).scrollTop() >= $("#reached").position().top) {
+      reach = 1;
+      element.classList.add("animate__animated", "animate__slideInRight");
+    }
+  }
+});
 
+$(document).on("scroll", function () {
+  if (reach == 0) {
+    if ($(this).scrollTop() >= $("#row-partners").position().top) {
+      reach = 1;
+      element.classList.add("animate__animated", "animate__slideInRight");
+    }
+  }
+});
+
+*/
 
 document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width = about_backgroud_width + "px";
@@ -114,23 +132,7 @@ $(document).ready(function () {
   );
 });
 
-$(document).on("scroll", function () {
-  if (reach == 0) {
-    if ($(this).scrollTop() >= $("#reached").position().top) {
-      reach = 1;
-      element.classList.add("animate__animated", "animate__slideInRight");
-    }
-  }
-});
 
-$(document).on("scroll", function () {
-  if (reach == 0) {
-    if ($(this).scrollTop() >= $("#row-partners").position().top) {
-      reach = 1;
-      element.classList.add("animate__animated", "animate__slideInRight");
-    }
-  }
-});
 
 function serviceClick() {
   console.log("clicked");
@@ -232,3 +234,44 @@ $(window).on('resize scroll', function () {
   }
 
 });
+
+
+var delay = (function () {
+  var timer = 0;
+  return function (callback, ms) {
+    clearTimeout(timer);
+    timer = setTimeout(callback, ms);
+  };
+})();
+
+
+
+var anim_src = document.getElementsByClassName("column-partners");
+const row_part = document.querySelector(".row-partners");
+let i = 0;
+
+$(window).on('resize scroll', function () {
+  if ($('#partner_row_2').isInViewport()) {
+    for (i = 0; i < 4; i++) {
+      anim_src[i].classList.add("slide-in-right");
+    }
+  }
+  if ($('#partner_row_3').isInViewport()) {
+    for (i = 4; i < 8; i++) {
+      anim_src[i].classList.add("slide-in-left");
+    }
+  }
+  if ($('#row3_visible').isInViewport()) {
+    for (i = 8; i < 12; i++) {
+      anim_src[i].classList.add("slide-in-right");
+      delay(function () {
+        row_part.classList.add("partner-black");
+      }, 900);
+
+    }
+  }
+
+});
+
+
+

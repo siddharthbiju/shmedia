@@ -31,9 +31,18 @@
   background-color: #202020;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #202020;
 }
 
@@ -101,7 +110,8 @@
   }
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   background-color: #202020;
 }
 
@@ -109,7 +119,8 @@
   background-image: none;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   background-image: none;
 }
 
@@ -125,44 +136,52 @@
   color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
   color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {}
+.navbar-inverse .navbar-nav > .li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+}
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
   color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {}
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+}
 
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
   color: #ffffff;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
   color: #ac9455;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
   border-top-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
   border-top-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
   border-bottom-color: #ffffff;
 }
 
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
   border-bottom-color: #ffffff;
 }
 
 .slide-in-bottom {
-  animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-bottom {
@@ -210,7 +229,7 @@ a:hover {
 }
 
 .slide-top-top {
-  animation: slide-top-top .5s cubic-bezier(.25, .46, .45, .94) both
+  animation: slide-top-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-top-top {
@@ -225,16 +244,43 @@ a:hover {
 }
 
 .slide-out-bottom {
-  animation: slide-out-bottom .5s cubic-bezier(.55, .085, .68, .53) both
+  animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @keyframes slide-out-bottom {
   0% {
     transform: translateY(0);
-    opacity: 1
+    opacity: 1;
   }
   100% {
     transform: translateY(100px);
-    opacity: 0
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

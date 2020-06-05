@@ -241,7 +241,7 @@ h2 {
 
 @media screen and (max-width: 1150px) {
   .column {
-    flex: 50%;
+    flex: 40%;
   }
 }
 

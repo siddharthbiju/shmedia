@@ -5,13 +5,11 @@ let pcytheight = document.getElementById("slider-wrapper").clientHeight;
 let about_backgroud_width = document.getElementById("about").clientWidth;
 let reach = 0;
 
-
-about_backgroud_width = about_backgroud_width * .7
+about_backgroud_width = about_backgroud_width * 0.7;
 mobileyt = (mobileyt * 9) / 16;
 h = h + 160;
 aboutImageHeight = h - 40;
 conh = conh + 160;
-
 
 /*
 const element = document.querySelector(".row-partners");
@@ -38,11 +36,12 @@ $(document).on("scroll", function () {
 */
 
 document.getElementById("service-background-box").style.height = h + "px";
-document.getElementById("service-background-box").style.width = about_backgroud_width + "px";
+document.getElementById("service-background-box").style.width =
+  about_backgroud_width + "px";
 
-let about_images_width = document.getElementById("service-background-box").clientWidth;
+let about_images_width = document.getElementById("service-background-box")
+  .clientWidth;
 about_images_width = about_images_width + 804;
-
 
 document
   .getElementById("get-contact-background-box")
@@ -68,11 +67,8 @@ document
   .getElementById("about-images-2")
   .setAttribute("style", "height:" + aboutImageHeight + "px");
 
-document.getElementById("about-images-container").style.width = about_images_width + "px";
-
-
-
-
+document.getElementById("about-images-container").style.width =
+  about_images_width + "px";
 
 function resize() {
   h = document.getElementById("about").clientHeight;
@@ -80,21 +76,20 @@ function resize() {
   mobileyt = document.getElementById("mobile-yt").clientWidth;
   pcytheight = document.getElementById("slider-wrapper").clientHeight;
   about_backgroud_width = document.getElementById("about").clientWidth;
-  about_images_width = document.getElementById("service-background-box").clientWidth;
-
+  about_images_width = document.getElementById("service-background-box")
+    .clientWidth;
 
   about_images_width = about_images_width + 804;
 
-  about_backgroud_width = about_backgroud_width * .7
+  about_backgroud_width = about_backgroud_width * 0.7;
   h = h + 160;
   aboutImageHeight = h - 40;
   conh = conh + 160;
   mobileyt = (mobileyt * 9) / 16;
 
-
-
   document.getElementById("service-background-box").style.height = h + "px";
-  document.getElementById("service-background-box").style.width = about_backgroud_width + "px";
+  document.getElementById("service-background-box").style.width =
+    about_backgroud_width + "px";
 
   document
     .getElementById("get-contact-background-box")
@@ -113,8 +108,8 @@ function resize() {
     .getElementById("about-images-2")
     .setAttribute("style", "height:" + aboutImageHeight + "px");
 
-  document.getElementById("about-images-container").style.width = about_images_width + "px";
-
+  document.getElementById("about-images-container").style.width =
+    about_images_width + "px";
 }
 
 $(document).ready(function () {
@@ -132,81 +127,72 @@ $(document).ready(function () {
   );
 });
 
-
-
 function serviceClick() {
   console.log("clicked");
   window.location.href = "/services/services.html";
 }
-
 
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");
 const element4 = document.getElementById("column_featured3");
 
-
 if ($(window).width() >= 960) {
   $(window).scroll(function () {
-    var hT = $('#featured_products').offset().top,
-      hH = $('#featured_products').outerHeight(),
+    var hT = $("#featured_products").offset().top,
+      hH = $("#featured_products").outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS > hT + hH - wH) {
       element1.classList.add("fade-in");
       element2.classList.add("slide-right");
       element3.classList.add("slide-bottom");
       element4.classList.add("slide-left");
     }
   });
-
 }
 
 if ($(window).width() < 960) {
-
   $(window).scroll(function () {
-    var hT = $('#fade-in').offset().top,
-      hH = $('#fade-in').outerHeight(),
+    var hT = $("#fade-in").offset().top,
+      hH = $("#fade-in").outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS > hT + hH - wH) {
       element1.classList.add("fade-in");
     }
   });
 
   $(window).scroll(function () {
-    var hT = $('#column_featured1').offset().top,
-      hH = $('#column_featured1').outerHeight(),
+    var hT = $("#column_featured1").offset().top,
+      hH = $("#column_featured1").outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS > hT + hH - wH) {
       element2.classList.add("slide-right");
     }
   });
 
   $(window).scroll(function () {
-    var hT = $('#column_featured2').offset().top,
-      hH = $('#column_featured2').outerHeight(),
+    var hT = $("#column_featured2").offset().top,
+      hH = $("#column_featured2").outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS > hT + hH - wH) {
       element3.classList.add("slide-left");
     }
   });
 
-
   $(window).scroll(function () {
-    var hT = $('#column_featured3').offset().top,
-      hH = $('#column_featured3').outerHeight(),
+    var hT = $("#column_featured3").offset().top,
+      hH = $("#column_featured3").outerHeight(),
       wH = $(window).height(),
       wS = $(this).scrollTop();
-    if (wS > (hT + hH - wH)) {
+    if (wS > hT + hH - wH) {
       element4.classList.add("slide-right");
     }
   });
-
 }
-
 
 const element5 = document.getElementById("gotop");
 let scrolltotop = 0;
@@ -221,8 +207,8 @@ $.fn.isInViewport = function () {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
-$(window).on('resize scroll', function () {
-  if ($('#hero-title').isInViewport()) {
+$(window).on("resize scroll", function () {
+  if ($("#hero-title").isInViewport()) {
     if (scrolltotop == 1) {
       element5.classList.remove("slide-top-top");
       element5.classList.add("slide-out-bottom");
@@ -232,9 +218,7 @@ $(window).on('resize scroll', function () {
     element5.classList.add("slide-top-top");
     scrolltotop = 1;
   }
-
 });
-
 
 var delay = (function () {
   var timer = 0;
@@ -244,34 +228,34 @@ var delay = (function () {
   };
 })();
 
-
-
 var anim_src = document.getElementsByClassName("column-partners");
 const row_part = document.querySelector(".row-partners");
 let i = 0;
 
-$(window).on('resize scroll', function () {
-  if ($('#partner_row_2').isInViewport()) {
+$(window).on("resize scroll", function () {
+  if ($("#partner_row_2").isInViewport()) {
     for (i = 0; i < 4; i++) {
       anim_src[i].classList.add("slide-in-right");
     }
   }
-  if ($('#partner_row_3').isInViewport()) {
+  if ($("#partner_row_3").isInViewport()) {
     for (i = 4; i < 8; i++) {
       anim_src[i].classList.add("slide-in-left");
     }
   }
-  if ($('#row3_visible').isInViewport()) {
+  if ($("#row3_visible").isInViewport()) {
     for (i = 8; i < 12; i++) {
       anim_src[i].classList.add("slide-in-right");
       delay(function () {
         row_part.classList.add("partner-black");
       }, 900);
-
     }
   }
-
 });
 
+$("#monitor").html($(window).width());
 
-
+$(window).resize(function () {
+  var viewportWidth = $(window).width();
+  $("#monitor").html(viewportWidth);
+});

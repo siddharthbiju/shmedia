@@ -207,17 +207,7 @@ if ($(window).width() < 960) {
 
 
 const element5 = document.getElementById("gotop");
-
-$(window).scroll(function () {
-  var hT = $('#about').offset().top,
-    hH = $('#about').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-  if (wS > (hT + hH - wH)) {
-    element5.classList.add("slide-top-top");
-
-  }
-});
+let scrolltotop = 0;
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;
@@ -231,9 +221,14 @@ $.fn.isInViewport = function () {
 
 $(window).on('resize scroll', function () {
   if ($('#hero-title').isInViewport()) {
-    console.log("visible");
-    // element5.classList.add("slide-top-top");
+    if (scrolltotop == 1) {
+      element5.classList.remove("slide-top-top");
+      element5.classList.add("slide-out-bottom");
+    }
   } else {
-    // console.log("not visible");
+    element5.classList.remove("slide-out-bottom");
+    element5.classList.add("slide-top-top");
+    scrolltotop = 1;
   }
+
 });

@@ -503,3 +503,29 @@ h2 {
         padding-left: 20%;
     }
 }
+
+@keyframes slide-top-top {
+    0% {
+        transform: translateY(100px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-out-bottom {
+    animation: slide-out-bottom .5s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@keyframes slide-out-bottom {
+    0% {
+        transform: translateY(0);
+        opacity: 1
+    }
+    100% {
+        transform: translateY(100px);
+        opacity: 0
+    }
+}

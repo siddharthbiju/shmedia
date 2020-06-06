@@ -530,12 +530,29 @@ h2 {
   }
 }
 
+.addr_maps {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+}
+
+.addr_maps iframe {
+  width: 100%;
+  height: 100%; 
+}
+
 .address {
-  width: 30%;
+  width: 640px;
   height: 400px;
   box-shadow: 0 0 100px -50px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
   padding: 10px;
+  margin-right: 10%;
+}
+
+.addr_maps_section {
+  background-color: #202020;
+  width: 100%;
 }
 
 .address h1 {
@@ -551,8 +568,29 @@ h2 {
   width: 210px;
   margin: 0 auto;
 }
+
 .address_details img {
   float: left;
-  margin-right: 15px;
+  margin-right: 10px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 820px) {
+  .addr_maps{
+    display: block;
+  }
+  .address{
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .addr_maps_section{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .address {
+    width: 90%;
+  }
 }

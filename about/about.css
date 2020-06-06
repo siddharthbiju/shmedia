@@ -400,6 +400,12 @@ h2 {
     color: white;
 }
 
+@media screen and (max-width: 450px) {
+    .btn{
+        padding: 16px 60px;
+    }
+}
+
 .row-ceo {
     display: flex;
     flex-wrap: wrap;

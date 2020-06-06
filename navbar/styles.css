@@ -33,7 +33,7 @@
 
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #ac9455;
+
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -228,6 +228,8 @@ a:hover {
   color: white;
 }
 
+
+
 .slide-top-top {
   animation: slide-top-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -322,4 +324,12 @@ a:hover {
   .dropdown-images {
     pointer-events: none;
   }
+}
+
+
+.free_nav:hover a {
+  color: white;
+}
+.li:hover{
+  color: #a99254;
 }

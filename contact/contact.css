@@ -466,43 +466,6 @@ h2 {
   }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* Create four equal columns */
-
-.column {
-  flex: 25%;
-  width: 20%;
-  height: auto;
-}
-
-.column iframe {
-  width: 100%;
-}
-
-@media screen and (max-width: 753px) {
-  .row {
-    width: 92%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 650px) {
-  .column {
-    flex: 100%;
-  }
-  .column-container {
-    margin-top: 40px;
-    float: left;
-    padding-left: 20%;
-  }
-}
 
 @keyframes slide-top-top {
   0% {
@@ -537,10 +500,7 @@ h2 {
   display: flex;
 }
 
-.addr_maps iframe {
-  width: 100%;
-  height: 100%; 
-}
+
 
 .address {
   width: 640px;
@@ -550,6 +510,11 @@ h2 {
   margin-right: 10%;
 }
 
+
+.addr_maps iframe {
+  width: 100%;
+  height: 400px;
+}
 .addr_maps_section {
   background-color: #202020;
   width: 100%;

@@ -16,6 +16,11 @@ $(document).ready(function () {
 
 let mobileyt = document.getElementById("mobile-yt").clientWidth;
 let conh = document.getElementById("get-contact").clientHeight;
+let map_height = document.getElementById("address").clientHeight;
+
+
+
+
 conh = conh + 160;
 
 document
@@ -78,3 +83,5 @@ $(window).on('resize scroll', function () {
     }
 
 });
+
+

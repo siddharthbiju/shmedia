@@ -127,10 +127,11 @@ $(document).ready(function () {
   );
 });
 
+/*
 function serviceClick() {
   console.log("clicked");
   window.location.href = "/services/services.html";
-}
+}*/
 
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");

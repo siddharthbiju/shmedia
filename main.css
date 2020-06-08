@@ -372,12 +372,12 @@ h2 {
 }
 
 .work-section {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .work-section img {
-  width: 200px;
+  object-fit: cover;
   height: 400px;
 }
 
@@ -392,7 +392,6 @@ h2 {
 .column-work {
   position: relative;
   flex: 20%;
-  width: 20%;
   height: auto;
   overflow: hidden;
   display: inline-block;
@@ -410,7 +409,8 @@ h2 {
   transition: all 0.5s;
 }
 
-.column-work:hover img, .column-work:focus img {
+.column-work:hover img,
+.column-work:focus img {
   transform: scale(1.2);
 }
 
@@ -458,8 +458,6 @@ h2 {
 
 .h6-work {
   font-weight: 600;
-  width: 100%;
-  max-width: 320px;
   margin-bottom: 6.75px;
 }
 
@@ -478,7 +476,7 @@ h4 {
 .row-partners {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -519,7 +517,7 @@ h4 {
 }
 
 .slide-in-right {
-  animation: slide-in-right 1s cubic-bezier(.25, .46, .45, .94) both
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-right {
@@ -534,7 +532,7 @@ h4 {
 }
 
 .slide-in-left {
-  animation: slide-in-left 1s cubic-bezier(.25, .46, .45, .94) both
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @keyframes slide-in-left {
@@ -844,6 +842,11 @@ h4 {
   .column_featured {
     flex: 100%;
   }
+}
+
+.productbtn {
+  margin-top: 30px;
+  font-weight: bold;
 }
 
 .slide-right {

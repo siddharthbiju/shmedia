@@ -1,0 +1,408 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-wrapper {
+  position: relative;
+  display: flex;
+  margin-top: -100px;
+  padding: 100px 50px;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+body {
+  color: #cdcdcd;
+  font-family: Exo, sans-serif;
+}
+
+.hero-text-wrapper {
+  position: relative;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 720px;
+  font-family: Exo, sans-serif;
+  font-weight: bold;
+}
+
+.video-container {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+
+#video-bg {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  background: transparent url(video-bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+video {
+  display: block;
+}
+
+h6 {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  color: #ac9455;
+  font-size: 12.5px;
+  line-height: 22.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.vertical-space {
+  width: 100%;
+  height: 80px;
+  background: #0000;
+}
+
+.comments-section {
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.customer-wrapper p {
+  color: white;
+}
+
+.yt iframe {
+  width: 65%;
+  height: 500px;
+  float: left;
+}
+
+.yt-mobile {
+  height: 0px;
+}
+
+.yt-mobile iframe {
+  height: auto;
+  visibility: hidden;
+}
+
+.comments {
+  width: 35%;
+  height: 100%;
+  float: left;
+}
+
+@media screen and (max-width: 1069px) {
+  .yt {
+    height: 0px;
+  }
+  .yt iframe {
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+    float: right;
+  }
+  .yt-mobile {
+    height: auto;
+  }
+  .yt-mobile iframe {
+    width: 100%;
+    visibility: visible;
+  }
+  .comments-section {
+    width: 100%;
+  }
+  .comments {
+    float: left;
+    width: 100%;
+  }
+}
+
+.end-black {
+  background-color: #202020;
+  width: 100%;
+  height: 150px;
+  padding-left: 10px;
+  padding-top: 40px;
+}
+
+.footer-nav-link {
+  height: 50px;
+  padding: 12.5px;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Exo, sans-serif;
+  font-size: 15px;
+}
+
+.footer-nav-link:hover {
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.end-black p {
+  margin-top: 15px;
+}
+
+.espy {
+  color: #7e6c3e;
+}
+
+.end-black p a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ac9455;
+}
+
+h2 {
+  font-family: Exo, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 150%;
+  font-weight: 650;
+  color: #151515;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: #ac9455;
+  border: none;
+  color: white;
+  padding: 16px 100px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #7e6c3e;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.column {
+  background-color: white;
+  flex: 33%;
+  padding: 10px;
+  width: 33.333%;
+  height: auto;
+}
+
+.img-2 {
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+  z-index: 10;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.cover {
+  object-fit: fill;
+}
+
+.img-1 {
+  position: relative;
+  z-index: 20;
+  margin-left: 87%;
+  visibility: hidden;
+}
+
+.column:hover .img-2 {
+  -webkit-filter: blur(4px);
+}
+
+.column:hover .img-1 {
+  visibility: visible;
+}
+
+.img-1:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  .column {
+    flex: 40%;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .row {
+    width: 92%;
+  }
+  .column {
+    flex: 100%;
+  }
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.slide-top {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-6-3 23:4:56
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes slide-top-top {
+  0% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-out-bottom {
+  animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes slide-out-bottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}

@@ -137,6 +137,10 @@ function home_click() {
   window.location.href = "/services/tabs/Home_theatre/home_theatre.html";
 }
 
+function automation_click() {
+  window.location.href = "/services/tabs/home_automation/home_automation.html";
+}
+
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");

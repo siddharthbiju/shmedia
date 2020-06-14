@@ -141,6 +141,14 @@ function automation_click() {
   window.location.href = "/services/tabs/home_automation/home_automation.html";
 }
 
+function ceo_sharath_fb() {
+  window.location.href = "https://www.facebook.com/profile.php?id=100000585396364";
+}
+
+function ceo_varghese_fb() {
+  window.location.href = "https://www.facebook.com/profile.php?id=100008075837759";
+}
+
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");

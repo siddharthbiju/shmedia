@@ -102,3 +102,11 @@ $(window).on("resize scroll", function () {
     scrolltotop = 1;
   }
 });
+
+function ceo_sharath_fb() {
+  window.location.href = "https://www.facebook.com/profile.php?id=100000585396364";
+}
+
+function ceo_varghese_fb() {
+  window.location.href = "https://www.facebook.com/profile.php?id=100008075837759";
+}

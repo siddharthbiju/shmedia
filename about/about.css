@@ -401,7 +401,7 @@ h2 {
 }
 
 @media screen and (max-width: 450px) {
-    .btn{
+    .btn {
         padding: 16px 60px;
     }
 }
@@ -424,6 +424,10 @@ h2 {
 
 .CEO-SOCIAL {
     margin-bottom: 15px;
+}
+
+.CEO-SOCIAL img {
+    cursor: pointer;
 }
 
 .column-ceo {

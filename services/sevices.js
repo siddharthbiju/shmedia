@@ -54,3 +54,7 @@ $(window).on('resize scroll', function () {
     }
 
 });
+
+function home_click() {
+    window.location.href = "/services/tabs/Home_theatre/home_theatre.html";
+}

@@ -205,6 +205,7 @@ h2 {
 }
 
 .column {
+  z-index: 10;
   background-color: white;
   flex: 33%;
   padding: 10px;
@@ -225,23 +226,45 @@ h2 {
   object-fit: fill;
 }
 
-.img-1 {
-  position: relative;
-  z-index: 20;
-  margin-left: 87%;
-  visibility: hidden;
-}
-
 .column:hover .img-2 {
   -webkit-filter: blur(4px);
 }
 
-.column:hover .img-1 {
+.full_screen {
+  position: absolute;
+  z-index: 30;
+  width: 150px;
+  height: 50px;
+  padding-top: 13px;
+  border-style: solid;
+  border-width: medium;
+  visibility: hidden;
+  margin-top: -250px;
+}
+
+.full_screen p {
+  text-align: center;
+  color: white;
+}
+
+.column:hover .full_screen {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   visibility: visible;
 }
 
-.img-1:hover {
+.full_screen:hover {
   cursor: pointer;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1150px) {

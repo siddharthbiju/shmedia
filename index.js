@@ -149,6 +149,10 @@ function ceo_varghese_fb() {
   window.location.href = "https://www.facebook.com/profile.php?id=100008075837759";
 }
 
+function amplifiers() {
+  window.location.href = "/products/amplifiers/amplifiers.html";
+}
+
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");

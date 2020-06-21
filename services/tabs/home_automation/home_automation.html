@@ -1,361 +1,329 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>SH Digital Media</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="/bootstrap.min.css" />
-        <link href='https://fonts.googleapis.com/css?family=Exo'
-            rel='stylesheet'>
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Oswald:wght@300&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/comments/comments.css">
-        <link rel="stylesheet" href="home_automation.css" />
-        <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SH Digital Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/comments/comments.css">
+    <link rel="stylesheet" href="home_automation.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
 
-    </head>
+</head>
 
-    <body onresize="resize()">
-        <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
-            role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button"
-                        data-toggle="collapse"
-                        data-target=".bs-navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/index.html">
-                        <img src="/images/logo3.png" height="30" alt="" />
-                    </a>
-                </div>
-                <nav class="collapse navbar-collapse bs-navbar-collapse"
-                    role="navigation">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="/about/about.html">About</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown"
-                                onclick="serviceClick()">services<b
-                                    class="caret"></b></a>
-                            <ul class="dropdown-menu slide-in-bottom">
-                                <li><a
-                                        href="/services/tabs/Home_theatre/home_theatre.html">Custom
-                                        home theatre</a></li>
-                                <li><a href="#">Audio/Video solutions</a></li>
-                                <li><a href="#">Home automation & Security</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle"
-                                data-toggle="dropdown">Products<b class="caret"></b></a>
-                            <ul class="dropdown-menu products-menu dropdown-menu
-                                slide-in-bottom">
-                                <div class="dropdown-images">
-                                    <li><img
-                                            src="/images/products/marantz.png"
-                                            height="70px" /></li>
-                                    <div class="image-line"></div>
-                                    <h6>amplifiers</h6>
-                                    <div class="hover-line"></div>
-                                </div>
-                                <div class="dropdown-images">
-                                    <li><img src="/images/products/sony.png"
-                                            height="70px" /></li>
-                                    <div class="image-line"></div>
-                                    <h6>projectors</h6>
-                                    <div class="hover-line"></div>
-                                </div>
-                                <div class="dropdown-images">
-                                    <li><img src="/images/products/kef.png"
-                                            height="70px" /></li>
-                                    <div class="image-line"></div>
-                                    <h6>speakers</h6>
-                                    <div class="hover-line"></div>
-                                </div>
-                                <div class="dropdown-images">
-                                    <li><img src="/images/products/elac.png"
-                                            height="70px" /></li>
-                                    <div class="image-line"></div>
-                                    <h6>SUBWOOFERS</h6>
-                                    <div class="hover-line"></div>
-                                </div>
-                                <div class="dropdown-images">
-                                    <li><img src="/images/products/fibaro.png"
-                                            height="70px" /></li>
-                                    <div class="image-line"></div>
-                                    <h6>HOME AUTOMATION</h6>
-                                    <div class="hover-line"></div>
-                                </div>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="/gallery/gallery.html">gallery</a>
-                        </li>
-                        <li>
-                            <a href="/contact/contact.html">Contact</a>
-                        </li>
-                        <li class="free_nav">
-                            <a href="/contact/contact.html#free-quote">Get a
-                                free quote</a>
-                        </li>
-                    </ul>
-                </nav>
+<body onresize="resize()">
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/images/logo3.png" height="30" alt="" />
+                </a>
             </div>
-        </header>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about/about.html">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" onclick="serviceClick()">services<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu slide-in-bottom">
+                            <li><a href="/services/tabs/Home_theatre/home_theatre.html">Custom
+                                    home theatre</a></li>
+                            <li><a href="#">Audio/Video solutions</a></li>
+                            <li><a href="#">Home automation & Security</a></li>
+                        </ul>
+                    </li>
 
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                        <ul class="dropdown-menu products-menu dropdown-menu
+                                slide-in-bottom">
+                            <div class="dropdown-images" onclick="amplifiers()">
+                                <li><img src="/images/products/marantz.png" height="70px" /></li>
+                                <div class="image-line"></div>
+                                <h6>amplifiers</h6>
+                                <div class="hover-line"></div>
+                            </div>
+                            <div class="dropdown-images">
+                                <li><img src="/images/products/sony.png" height="70px" /></li>
+                                <div class="image-line"></div>
+                                <h6>projectors</h6>
+                                <div class="hover-line"></div>
+                            </div>
+                            <div class="dropdown-images">
+                                <li><img src="/images/products/kef.png" height="70px" /></li>
+                                <div class="image-line"></div>
+                                <h6>speakers</h6>
+                                <div class="hover-line"></div>
+                            </div>
+                            <div class="dropdown-images">
+                                <li><img src="/images/products/elac.png" height="70px" /></li>
+                                <div class="image-line"></div>
+                                <h6>SUBWOOFERS</h6>
+                                <div class="hover-line"></div>
+                            </div>
+                            <div class="dropdown-images">
+                                <li><img src="/images/products/fibaro.png" height="70px" /></li>
+                                <div class="image-line"></div>
+                                <h6>HOME AUTOMATION</h6>
+                                <div class="hover-line"></div>
+                            </div>
+                        </ul>
+                    </li>
 
-        <div class="service_details" id="service_details">
-            <h6 class="view" id="view">service</h6>
-            <h1>Home Automation & Security</h1>
-            <h3>SECURE YOUR HOME</h3>
-            <p>One of the greatest benefit of home automation systems is an
-                automated door locks! Through an automated system, you can lock
-                your doors with the tap of your finger. Smart homes may also use
-                key cards or fingerprint identification in place of conventional
-                locks, making it harder for someone to break in! You can also
-                have detectors on windows and doors so that you can know if
-                anyone has opened without you being aware or has damaged!</p>
-            <h3>ADDS SAFETY THROUGH APPLIANCE</h3>
-            <p>You have the ability to control the small appliances and
-                lighting, again with the simple tap of your finger on your
-                favorite technological device. ect (how you hear thesound) of
-                the reflections in your room.You can also measure the safety
-                through your ability to control the lights in your home. Not
-                only does this allow you to make sure lights are off, but it
-                also allows you to turn them on at specific times!</p>
-            <h3>REDUCE YOUR ENERGY COSTS</h3>
-            <p>Smart thermostats and lighting can help you using the energy more
-                efficiently by automatic adjusting or switching off when not in
-                use! Smart automation systems can help you avoid leaving lights
-                ON in the garage overnight, or running the air conditioning in
-                an empty house! By using less power, you will benefit by
-                reducing your monthly energy costs!</p>
-            <h3>INCREASE AWARENESS THROUGH SECURITY CAMERAS</h3>
-            <p>This means that we often miss some things that happen in our own
-                home or backyard! With a home automation systems, you can easily
-                see what is happening in your home! Now you can make sure no
-                unwelcome guests arrive. Security cameras increase the family
-                safety by recording clips at specific times of the day or night
-                when required!</p>
-            <h3>INCREASE CONVENIENCE THROUGH TEMPERATURE ADJUSTMENT</h3>
-            <p>You can simply adjust the thermostat from your office a few hours
-                before reaching your home! This is both cost-effective and saves
-                on energy, and it also helps you to stay on top of your life
-                when you have run out in the morning to the office without
-                considering much else besides arriving to work in time!</p>
-            <h3>SAVES TIME</h3>
-            <p>These 21st-century homes are all about saving time and energy.
-                With a smart home, you will get more time with your friends and
-                family. You will enjoy more free time with less stress! In
-                short, you easily save your precious time and experience more
-                daily productivity!</p>
-            <h3>COST EFFECTIVENESS</h3>
-            <p>In the study done by the US Environmental Protection Agency, it
-                was reported that users of smart home technology for thermostat
-                control alone saved 10%-30% on their energy bill! Over the
-                course of a year, or 5 years, those savings will add up quickly
-                to the capital cost!</p>
-            <h3>KEEP EYE ON YOUR KIDS/CHILDREN, PETS & AGING PARENTS</h3>
-            <p>Through the benefits of the home automation system, you can
-                easily keep your eye on your kids. You can ensure that they make
-                it safely into the house after arriving from school! You can
-                also see their INs & OUTs on security cameras. You can also
-                check in with an older or sick loved one whom you are caring
-                for! Your pets are also get watched & monitor!</p>
-            <h3>MAKE YOUR HOME AWESOME</h3>
-            <p>You now have the ability to control home appliances and systems
-                with our voices and movements, and as the technology becomes
-                more perceptive, it can anticipate and react to our patterns and
-                preferences! After all, with each addition, you will be making
-                an investment in security, energy efficiency, safety lifestyle
-                and yes awesomeness!</p>
+                    <li>
+                        <a href="/gallery/gallery.html">gallery</a>
+                    </li>
+                    <li>
+                        <a href="/contact/contact.html">Contact</a>
+                    </li>
+                    <li class="free_nav">
+                        <a href="/contact/contact.html#free-quote">Get a
+                            free quote</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
 
-        <div id="gotop" style="opacity: 0;">
-            <a href="#">
-                <img src="/images/icons/top.jpg" height="50px"></a>
-        </div>
+    <div class="service_details" id="service_details">
+        <h6 class="view" id="view">service</h6>
+        <h1>Home Automation & Security</h1>
+        <h3>SECURE YOUR HOME</h3>
+        <p>One of the greatest benefit of home automation systems is an
+            automated door locks! Through an automated system, you can lock
+            your doors with the tap of your finger. Smart homes may also use
+            key cards or fingerprint identification in place of conventional
+            locks, making it harder for someone to break in! You can also
+            have detectors on windows and doors so that you can know if
+            anyone has opened without you being aware or has damaged!</p>
+        <h3>ADDS SAFETY THROUGH APPLIANCE</h3>
+        <p>You have the ability to control the small appliances and
+            lighting, again with the simple tap of your finger on your
+            favorite technological device. ect (how you hear thesound) of
+            the reflections in your room.You can also measure the safety
+            through your ability to control the lights in your home. Not
+            only does this allow you to make sure lights are off, but it
+            also allows you to turn them on at specific times!</p>
+        <h3>REDUCE YOUR ENERGY COSTS</h3>
+        <p>Smart thermostats and lighting can help you using the energy more
+            efficiently by automatic adjusting or switching off when not in
+            use! Smart automation systems can help you avoid leaving lights
+            ON in the garage overnight, or running the air conditioning in
+            an empty house! By using less power, you will benefit by
+            reducing your monthly energy costs!</p>
+        <h3>INCREASE AWARENESS THROUGH SECURITY CAMERAS</h3>
+        <p>This means that we often miss some things that happen in our own
+            home or backyard! With a home automation systems, you can easily
+            see what is happening in your home! Now you can make sure no
+            unwelcome guests arrive. Security cameras increase the family
+            safety by recording clips at specific times of the day or night
+            when required!</p>
+        <h3>INCREASE CONVENIENCE THROUGH TEMPERATURE ADJUSTMENT</h3>
+        <p>You can simply adjust the thermostat from your office a few hours
+            before reaching your home! This is both cost-effective and saves
+            on energy, and it also helps you to stay on top of your life
+            when you have run out in the morning to the office without
+            considering much else besides arriving to work in time!</p>
+        <h3>SAVES TIME</h3>
+        <p>These 21st-century homes are all about saving time and energy.
+            With a smart home, you will get more time with your friends and
+            family. You will enjoy more free time with less stress! In
+            short, you easily save your precious time and experience more
+            daily productivity!</p>
+        <h3>COST EFFECTIVENESS</h3>
+        <p>In the study done by the US Environmental Protection Agency, it
+            was reported that users of smart home technology for thermostat
+            control alone saved 10%-30% on their energy bill! Over the
+            course of a year, or 5 years, those savings will add up quickly
+            to the capital cost!</p>
+        <h3>KEEP EYE ON YOUR KIDS/CHILDREN, PETS & AGING PARENTS</h3>
+        <p>Through the benefits of the home automation system, you can
+            easily keep your eye on your kids. You can ensure that they make
+            it safely into the house after arriving from school! You can
+            also see their INs & OUTs on security cameras. You can also
+            check in with an older or sick loved one whom you are caring
+            for! Your pets are also get watched & monitor!</p>
+        <h3>MAKE YOUR HOME AWESOME</h3>
+        <p>You now have the ability to control home appliances and systems
+            with our voices and movements, and as the technology becomes
+            more perceptive, it can anticipate and react to our patterns and
+            preferences! After all, with each addition, you will be making
+            an investment in security, energy efficiency, safety lifestyle
+            and yes awesomeness!</p>
+    </div>
 
 
-        <div class="vertical-space"></div>
+    <div id="gotop" style="opacity: 0;">
+        <a href="#">
+            <img src="/images/icons/top.jpg" height="50px"></a>
+    </div>
 
-        <div class="yt-mobile">
-            <p align="center"><iframe id="mobile-yt"
-                    src="https://www.youtube.com/embed/2CeOIcWsA_k"></p>
+
+    <div class="vertical-space"></div>
+
+    <div class="yt-mobile">
+        <p align="center"><iframe id="mobile-yt" src="https://www.youtube.com/embed/2CeOIcWsA_k"></p>
+        </iframe>
+    </div>
+
+    <div class="comments-section" id="comments-section">
+        <div class="yt">
+            <iframe frameBorder="0" src="https://www.youtube.com/embed/2CeOIcWsA_k">
             </iframe>
         </div>
-
-        <div class="comments-section" id="comments-section">
-            <div class="yt">
-                <iframe frameBorder="0"
-                    src="https://www.youtube.com/embed/2CeOIcWsA_k">
-                </iframe>
-            </div>
-            <div class="comments">
-                <div class="wrapper">
-                    <input checked type="radio" name="slider" id="slide1" />
-                    <input type="radio" name="slider" id="slide2" />
-                    <input type="radio" name="slider" id="slide3" />
-                    <input type="radio" name="slider" id="slide4" />
+        <div class="comments">
+            <div class="wrapper">
+                <input checked type="radio" name="slider" id="slide1" />
+                <input type="radio" name="slider" id="slide2" />
+                <input type="radio" name="slider" id="slide3" />
+                <input type="radio" name="slider" id="slide4" />
 
 
-                    <div class="slider-wrapper" id="slider-wrapper">
-                        <div class="inner">
-                            <article>
-                                <div class="customer-wrapper">
-                                    <div class="about-customer">
-                                        <img src="/images/customers/lal.jpg"
-                                            alt="" class="services-icon">
-                                        <h6>cine</h6>
-                                        <h3>Lal Babu</h3>
-                                    </div>
-
-                                    <p class="paragraph">SH Media has been
-                                        nothing but unbelievably great.
-                                        You've earned
-                                        a customer! Wow, thank you! Great
-                                        collection of foreign and video
-                                        brands..</p>
-                                    <img class="article-icon"
-                                        src="/images/quote.svg" height="100px">
-                                </div>
-                            </article>
-
-
-                            <article>
-
-                                <div class="customer-wrapper"
-                                    id="customer-wrapper">
-                                    <div class="about-customer">
-                                        <img src="/images/customers/jacky.jpg"
-                                            alt="" class="services-icon">
-                                        <h6>Cini camera man</h6>
-                                        <h3>jacky</h3>
-                                    </div>
-
-                                    <p>Our system was installed two years
-                                        ago and we are happy with the
-                                        results.
-                                        Finally, on the couple of occasions
-                                        we have had to contact SH Media with
-                                        questions or possible upgrade, he
-                                        has replied timely. </p>
-                                    <img class="article-icon"
-                                        src="/images/quote.svg" height="100px">
+                <div class="slider-wrapper" id="slider-wrapper">
+                    <div class="inner">
+                        <article>
+                            <div class="customer-wrapper">
+                                <div class="about-customer">
+                                    <img src="/images/customers/lal.jpg" alt="" class="services-icon">
+                                    <h6>cine</h6>
+                                    <h3>Lal Babu</h3>
                                 </div>
 
-                            </article>
+                                <p class="paragraph">SH Media has been
+                                    nothing but unbelievably great.
+                                    You've earned
+                                    a customer! Wow, thank you! Great
+                                    collection of foreign and video
+                                    brands..</p>
+                                <img class="article-icon" src="/images/quote.svg" height="100px">
+                            </div>
+                        </article>
 
-                            <article>
-                                <div class="customer-wrapper">
-                                    <div class="about-customer">
-                                        <img src="/images/customers/binoy.jpg"
-                                            alt="" class="services-icon">
-                                        <h6>sports council coach</h6>
-                                        <h3>Binoj Johny</h3>
-                                    </div>
 
-                                    <p class="article-icon">
-                                        I love buying from SH Media. The
-                                        support is incredible, great website
-                                        - I am
-                                        impressed! Great company. The most
-                                        beautiful work in the lowest price
-                                        when
-                                        compared to similar areas SH Media
-                                        is able to complete the work in
-                                        given time.
-                                    </p>
-                                    <img class="article-icon"
-                                        src="/images/quote.svg" height="100px">
+                        <article>
+
+                            <div class="customer-wrapper" id="customer-wrapper">
+                                <div class="about-customer">
+                                    <img src="/images/customers/jacky.jpg" alt="" class="services-icon">
+                                    <h6>Cini camera man</h6>
+                                    <h3>jacky</h3>
                                 </div>
-                            </article>
 
-                            <article>
-                                <div class="customer-wrapper">
-                                    <div class="about-customer">
-                                        <img src="/images/customers/wilfred.jpg"
-                                            alt="" class="services-icon">
-                                        <h6>customer</h6>
-                                        <h3>Wilfred Martin</h3>
-                                    </div>
+                                <p>Our system was installed two years
+                                    ago and we are happy with the
+                                    results.
+                                    Finally, on the couple of occasions
+                                    we have had to contact SH Media with
+                                    questions or possible upgrade, he
+                                    has replied timely. </p>
+                                <img class="article-icon" src="/images/quote.svg" height="100px">
+                            </div>
 
-                                    <p class="paragraph">In the theatre room
-                                        in my house there was much more
-                                        Echo... I
-                                        approached Smart Home Digital Media
-                                        to find a solution for this. Their
-                                        expert
-                                        sound engineers made it very
-                                        beautiful.Great work! Good
-                                        installation, Audio
-                                        and video is mind blowing.</p>
-                                    <img class="article-icon"
-                                        src="/images/quote.svg" height="100px">
+                        </article>
+
+                        <article>
+                            <div class="customer-wrapper">
+                                <div class="about-customer">
+                                    <img src="/images/customers/binoy.jpg" alt="" class="services-icon">
+                                    <h6>sports council coach</h6>
+                                    <h3>Binoj Johny</h3>
                                 </div>
-                            </article>
 
-                        </div>
-                        <!-- .inner -->
+                                <p class="article-icon">
+                                    I love buying from SH Media. The
+                                    support is incredible, great website
+                                    - I am
+                                    impressed! Great company. The most
+                                    beautiful work in the lowest price
+                                    when
+                                    compared to similar areas SH Media
+                                    is able to complete the work in
+                                    given time.
+                                </p>
+                                <img class="article-icon" src="/images/quote.svg" height="100px">
+                            </div>
+                        </article>
+
+                        <article>
+                            <div class="customer-wrapper">
+                                <div class="about-customer">
+                                    <img src="/images/customers/wilfred.jpg" alt="" class="services-icon">
+                                    <h6>customer</h6>
+                                    <h3>Wilfred Martin</h3>
+                                </div>
+
+                                <p class="paragraph">In the theatre room
+                                    in my house there was much more
+                                    Echo... I
+                                    approached Smart Home Digital Media
+                                    to find a solution for this. Their
+                                    expert
+                                    sound engineers made it very
+                                    beautiful.Great work! Good
+                                    installation, Audio
+                                    and video is mind blowing.</p>
+                                <img class="article-icon" src="/images/quote.svg" height="100px">
+                            </div>
+                        </article>
+
                     </div>
-                    <!-- .slider-wrapper -->
-
-                    <div class="slider-prev-next-control">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                        <label for="slide4"></label>
-                    </div>
-                    <!-- .slider-prev-next-control -->
-
-                    <div class="slider-dot-control">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                        <label for="slide4"></label>
-                    </div>
-                    <!-- .slider-dot-control -->
+                    <!-- .inner -->
                 </div>
+                <!-- .slider-wrapper -->
 
+                <div class="slider-prev-next-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <!-- .slider-prev-next-control -->
+
+                <div class="slider-dot-control">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <!-- .slider-dot-control -->
             </div>
-
 
         </div>
 
-        <div class="end-black">
-            <p align="center" class="social-links">
-                <a class="footer-nav-link"
-                    href="https://www.facebook.com/shmedia.in">facebook</a>
-                <a href="https://www.instagram.com/shdigitalmedia/"
-                    class="footer-nav-link">instagram</a>
-                <a
-                    href="https://www.youtube.com/channel/UCtwPvvgmXNFgqWCcOqCuWJw/featured"
-                    class="footer-nav-link">youtube</a>
-            </p>
+
+    </div>
+
+    <div class="end-black">
+        <p align="center" class="social-links">
+            <a class="footer-nav-link" href="https://www.facebook.com/shmedia.in">facebook</a>
+            <a href="https://www.instagram.com/shdigitalmedia/" class="footer-nav-link">instagram</a>
+            <a href="https://www.youtube.com/channel/UCtwPvvgmXNFgqWCcOqCuWJw/featured"
+                class="footer-nav-link">youtube</a>
+        </p>
 
 
 
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="/navbar/styles.css" />
-            <script src="home_automation.js"></script>
-        </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/navbar/styles.css" />
+        <script src="home_automation.js"></script>
+</body>

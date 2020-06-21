@@ -58,3 +58,7 @@ $(window).on("resize scroll", function () {
     scrolltotop = 1;
   }
 });
+
+function amplifiers() {
+  window.location.href = "/products/amplifiers/amplifiers.html";
+}

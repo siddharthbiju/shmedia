@@ -33,6 +33,10 @@ function serviceClick() {
   //  window.location.href = "/services/services.html";
 }
 
+function amplifiers() {
+  window.location.href = "/products/amplifiers/amplifiers.html";
+}
+
 let image_height = document.getElementById("image_height").clientWidth;
 
 image_height = image_height / 2;

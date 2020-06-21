@@ -61,3 +61,7 @@ function home_click() {
 function automation_click() {
     window.location.href = "/services/tabs/home_automation/home_automation.html";
 }
+
+function amplifiers() {
+    window.location.href = "/products/amplifiers/amplifiers.html";
+}

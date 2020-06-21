@@ -77,6 +77,10 @@ function serviceClick() {
   // window.location.href = "/services/services.html";
 }
 
+function amplifiers() {
+  window.location.href = "/products/amplifiers/amplifiers.html";
+}
+
 const element5 = document.getElementById("gotop");
 let scrolltotop = 0;
 

@@ -153,6 +153,10 @@ function amplifiers() {
   window.location.href = "/products/amplifiers/amplifiers.html";
 }
 
+function subwoofers() {
+  window.location.href = "/products/subwoofers/subwoofers.html";
+}
+
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");

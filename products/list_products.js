@@ -94,3 +94,10 @@ if ($(window).width() >= 960) {
     });
 }
 
+function amplifiers() {
+    window.location.href = "/products/amplifiers/amplifiers.html";
+}
+
+function subwoofers() {
+    window.location.href = "/products/subwoofers/subwoofers.html";
+}

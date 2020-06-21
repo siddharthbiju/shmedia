@@ -73,3 +73,24 @@ $(window).on("resize scroll", function () {
         scrolltotop = 1;
     }
 });
+
+const element1 = document.getElementById("fade-in");
+const element2 = document.getElementById("column_featured1");
+const element3 = document.getElementById("column_featured2");
+const element4 = document.getElementById("column_featured3");
+
+if ($(window).width() >= 960) {
+    $(window).scroll(function () {
+        var hT = $("#featured_products").offset().top,
+            hH = $("#featured_products").outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > hT + hH - wH) {
+            element1.classList.add("fade-in");
+            element2.classList.add("slide-right");
+            element3.classList.add("slide-bottom");
+            element4.classList.add("slide-left");
+        }
+    });
+}
+

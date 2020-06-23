@@ -11,29 +11,12 @@ h = h + 160;
 aboutImageHeight = h - 40;
 conh = conh + 160;
 
-/*
-const element = document.querySelector(".row-partners");
-element.classList.add("animate__animated", "animate__bounceOutLeft");
-
-$(document).on("scroll", function () {
-  if (reach == 0) {
-    if ($(this).scrollTop() >= $("#reached").position().top) {
-      reach = 1;
-      element.classList.add("animate__animated", "animate__slideInRight");
-    }
-  }
-});
-
-$(document).on("scroll", function () {
-  if (reach == 0) {
-    if ($(this).scrollTop() >= $("#row-partners").position().top) {
-      reach = 1;
-      element.classList.add("animate__animated", "animate__slideInRight");
-    }
-  }
-});
-
-*/
+var video_src = document.getElementById("video-bg");
+if (screen.width > 600) {
+  video_src.src = "/videos/FinalComp.mp4";
+} else {
+  video_src.src = "/videos/output.mp4";
+}
 
 document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width =
@@ -110,6 +93,7 @@ function resize() {
 
   document.getElementById("about-images-container").style.width =
     about_images_width + "px";
+
 }
 
 $(document).ready(function () {
@@ -284,3 +268,5 @@ $(window).resize(function () {
   var viewportWidth = $(window).width();
   $("#monitor").html(viewportWidth);
 });
+
+

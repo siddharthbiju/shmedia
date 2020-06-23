@@ -3,6 +3,36 @@
   font-family: Exo, sans-serif;
 }
 
+.small_contact {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  background-color: #202020;
+  z-index: 1000;
+  top: 0;
+  padding-top: 7px;
+}
+
+.address_details {
+  display: flex;
+  float: right;
+  margin-right: 10%;
+}
+
+.address_details img {
+  margin-right: 10px;
+}
+
+.address_details_email {
+  display: flex;
+  float: right;
+  margin-right: 30px;
+}
+
+.address_details_email img {
+  margin-right: 10px;
+}
+
 .free_nav:hover {
   background-color: #7e6c3e;
   color: white;
@@ -21,6 +51,34 @@
   width: 160px;
   height: auto;
   margin-top: -14px;
+}
+
+@media screen and (max-width: 1058px) {
+  .navbar-brand img {
+    width: 120px;
+    margin-top: 15px;
+  }
+  .address_details {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .small_contact p {
+    font-size: 12px;
+  }
+  .small_contact img {
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .small_contact p {
+    visibility: hidden;
+  }
+  .small_contact img {
+    visibility: hidden;
+  }
 }
 
 .navbar .nav {
@@ -255,6 +313,7 @@ a:hover {
     float: none !important;
   }
   .navbar-toggle {
+    margin-top: 33px;
     display: block;
   }
   .navbar-collapse {

@@ -37,6 +37,10 @@ function amplifiers() {
   window.location.href = "/products/amplifiers/amplifiers.html";
 }
 
+function subwoofers() {
+  window.location.href = "/products/subwoofers/subwoofers.html";
+}
+
 let image_height = document.getElementById("image_height").clientWidth;
 
 image_height = image_height / 2;

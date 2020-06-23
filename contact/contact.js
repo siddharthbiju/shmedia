@@ -52,6 +52,10 @@ function amplifiers() {
   window.location.href = "/products/amplifiers/amplifiers.html";
 }
 
+function subwoofers() {
+  window.location.href = "/products/subwoofers/subwoofers.html";
+}
+
 const element5 = document.getElementById("gotop");
 let scrolltotop = 0;
 

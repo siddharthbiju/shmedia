@@ -11,13 +11,6 @@ h = h + 160;
 aboutImageHeight = h - 40;
 conh = conh + 160;
 
-var video_src = document.getElementById("video-bg");
-if (screen.width > 600) {
-  video_src.src = "/videos/FinalComp.mp4";
-} else {
-  video_src.src = "/videos/output.mp4";
-}
-
 document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width =
   about_backgroud_width + "px";

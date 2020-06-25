@@ -233,7 +233,7 @@ var delay = (function () {
 var anim_src = document.getElementsByClassName("column-partners");
 const row_part = document.querySelector(".row-partners");
 let i = 0;
-
+/*
 $(window).on("resize scroll", function () {
   if ($("#partner_row_2").isInViewport()) {
     for (i = 0; i < 4; i++) {
@@ -253,7 +253,7 @@ $(window).on("resize scroll", function () {
       }, 900);
     }
   }
-});
+});*/
 
 $("#monitor").html($(window).width());
 

@@ -23,10 +23,18 @@
   margin-right: 10px;
 }
 
+.address_details p {
+  color: #cdcdcd;
+}
+
 .address_details_email {
   display: flex;
   float: right;
   margin-right: 30px;
+}
+
+.address_details_email p {
+  color: #cdcdcd;
 }
 
 .address_details_email img {

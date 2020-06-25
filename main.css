@@ -19,6 +19,7 @@ body {
     background: #ffffff;
     color: #cdcdcd;
     font-family: Exo, sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -919,5 +920,38 @@ h4 {
     }
     100% {
         opacity: 1;
+    }
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999;
+    background-color: black;
+}
+
+.se-pre-con img {
+    position: absolute;
+    top: 20%
+}
+
+.slide-out-top {
+    animation: slide-out-top .5s cubic-bezier(.55, .085, .68, .53) both
+}
+
+@keyframes slide-out-top {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0;
     }
 }

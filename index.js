@@ -263,3 +263,8 @@ $(window).resize(function () {
 });
 
 
+const finish = document.getElementById("finish_loading");
+finish.classList.add("slide-out-top");
+
+
+setTimeout(function () { document.body.style.overflow = "scroll"; }, 1000);

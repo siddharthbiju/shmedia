@@ -939,7 +939,7 @@ h4 {
 }
 
 .slide-out-top {
-    animation: slide-out-top .5s cubic-bezier(.55, .085, .68, .53) both
+    animation: slide-out-top .8s cubic-bezier(.55, .085, .68, .53) both
 }
 
 @keyframes slide-out-top {

@@ -71,7 +71,6 @@ h6 {
 .vertical-space {
   width: 100%;
   height: 80px;
-  background: #0000;
 }
 
 .comments-section {
@@ -513,7 +512,6 @@ h2 {
 }
 
 .addr_maps_section {
-  background-color: #202020;
   width: 100%;
 }
 
@@ -526,7 +524,7 @@ h2 {
   font-size: larger;
 }
 
-.address_details {
+.address_details_orginal {
   width: 210px;
   margin: 0 auto;
 }
@@ -535,7 +533,7 @@ h2 {
   width: 230px;
 }
 
-.address_details img {
+.address_details_orginal img {
   float: left;
   margin-right: 10px;
   margin-top: 5px;

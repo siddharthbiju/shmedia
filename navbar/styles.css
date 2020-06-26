@@ -64,7 +64,7 @@
 @media screen and (max-width: 1058px) {
   .navbar-brand img {
     width: 120px;
-    margin-top: 15px;
+    margin-top: 21px;
   }
   .address_details {
     margin-right: 5%;
@@ -321,7 +321,7 @@ a:hover {
     float: none !important;
   }
   .navbar-toggle {
-    margin-top: 33px;
+    margin-top: 40px;
     display: block;
   }
   .navbar-collapse {

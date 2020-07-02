@@ -18,10 +18,12 @@
   background: transparent;
   transition: border-color 0.2s;
 }
+
 .form__field::placeholder {
   color: transparent;
 }
-.form__field:placeholder-shown ~ .form__label {
+
+.form__field:placeholder-shown~.form__label {
   font-size: 1.3rem;
   cursor: text;
   top: 20px;
@@ -43,7 +45,8 @@
   border-image: linear-gradient(to right, #a08a4f, #a08a4f);
   border-image-slice: 1;
 }
-.form__field:focus ~ .form__label {
+
+.form__field:focus~.form__label {
   position: absolute;
   top: 0;
   display: block;
@@ -54,7 +57,12 @@
 }
 
 /* reset input */
-.form__field:required,
-.form__field:invalid {
+
+.form__field:required, .form__field:invalid {
   box-shadow: none;
+}
+
+.invalid {
+  color: red;
+  visibility: hidden;
 }

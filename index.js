@@ -268,3 +268,73 @@ finish.classList.add("slide-out-top");
 
 
 setTimeout(function () { document.body.style.overflow = "scroll"; }, 1000);
+
+var x = document.getElementById("frm1");
+var invalidemail = document.getElementById("invalidemail");
+var invalidphone = document.getElementById("invalidphone");
+var invalidname = document.getElementById("invalidname");
+
+let emailtests = 0;
+let nametests = 0;
+let phonetests = 0;
+
+function submit_form() {
+  name = x[0].value;
+  email = x[1].value;
+  phone = x[2].value;
+  validatename(name);
+  validateEmail(email);
+  validatePhone(x[2]);
+  blankit();
+}
+
+function validateEmail(sEmail) {
+  var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+
+  if (!sEmail.match(reEmail)) {
+    invalidemail.style.visibility = "visible";
+    emailtests = 0;
+    return false;
+  }
+  else {
+    invalidemail.style.visibility = "hidden";
+    emailtests = 1;
+    return true;
+  }
+
+}
+
+function validatePhone(phoneField) {
+  var num = phoneField.value.replace(/[^\d]/g, '');
+  if (num.length != 10) {
+    //Alert the user that the phone number entered was invalid.
+    invalidphone.style.visibility = "visible";
+    phonetests = 0;
+  } else {
+    //Email was valid.  If format type is set, format the Phone to the desired style.
+    invalidphone.style.visibility = "hidden";
+    phonetests = 1;
+  }
+}
+
+function validatename(test) {
+  var str = test;
+  if (!str.replace(/\s/g, '').length) {
+    invalidname.style.visibility = "visible";
+    nametests = 0;
+    //alert('string only contains whitespace (ie. spaces, tabs or line breaks)');
+  }
+  else {
+    invalidname.style.visibility = "hidden";
+    nametests = 1;
+  }
+}
+
+function blankit() {
+  if (nametests == 1 && phonetests == 1 && emailtests == 1) {
+    console.log("hi");
+    x[0].value = "";
+    x[1].value = "";
+    x[2].value = "";
+  }
+}

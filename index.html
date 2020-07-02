@@ -443,28 +443,32 @@
 
         <div class="get-contact-background-box" id="get-contact-background-box"> </div>
         <div class="get-contact" id="get-contact">
-            <div class="get-contact-content-wrapper">
+            <form action="mail_handler.php" method="post" name="form" id="frm1" class="get-contact-content-wrapper">
                 <h2>Get A Free Quote </h2>
                 <div class="form__group field">
-                    <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+                    <input type="text" class="form__field" placeholder="Name" name="name" id="name" required />
                     <label for="name" class="form__label">Name</label>
+                    <p class="invalid" id="invalidname">Invalid name</p>
                 </div>
 
                 <div class="form__group field">
-                    <input type="email" class="form__field" placeholder="Email" name="Email" id="Email" required />
+                    <input type="email" class="form__field" placeholder="Email" name="email" id="Email" required />
                     <label for="Email" class="form__label">Email</label>
+                    <p class="invalid" id="invalidemail">Invalid email</p>
                 </div>
 
                 <div class="form__group field">
                     <input type="phone" class="form__field" placeholder="phone" name="phone" id="phone" required />
                     <label for="phone" class="form__label">Phone</label>
+                    <p class="invalid" id="invalidphone">Invalid phone number</p>
                 </div>
                 <div class="submit"></div>
-                <a href="#" class="btn">Submit Request</a>
-            </div>
+                <input type="submit" name="submit" value="Submit Request" class="btn">
+            </form>
 
         </div>
-        <div class="vertical-space"></div>
+        <div class=" vertical-space">
+        </div>
 
 
         <link rel="stylesheet" href="comments/comments.css">

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="php.css" type="text/css">
 <?php
 	if(isset($_POST['submit'])){
 		$name=$_POST['name'];
@@ -12,10 +13,11 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-		//	echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+			echo "<p>We will contact you shortly!</p>";
 		}
 		else{
-		//	echo "Something went wrong!";
+			echo "<p>Something went wrong!</p>";
 		}
 	}
 ?>
+

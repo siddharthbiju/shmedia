@@ -443,7 +443,8 @@
 
         <div class="get-contact-background-box" id="get-contact-background-box"> </div>
         <div class="get-contact" id="get-contact">
-            <form name="form" id="frm1" class="get-contact-content-wrapper">
+            <form action="mail_handler.php" method="post" name="form" id="frm1" class="get-contact-content-wrapper"
+                target="iframe_a">
                 <h2>Get A Free Quote </h2>
                 <div class="form__group field">
                     <input type="text" class="form__field" placeholder="Name" name="name" id="name" required />
@@ -463,9 +464,11 @@
                     <p class="invalid" id="invalidphone">Invalid phone number</p>
                 </div>
                 <div class="submit"></div>
+                <iframe class="submit_message" frameBorder="0" id="success_message" name="iframe_a"></iframe>
+                <br />
                 <a onclick="submit_form()" class="btn">Submit Request</a>
-            </form>
 
+            </form>
         </div>
         <div class=" vertical-space">
         </div>

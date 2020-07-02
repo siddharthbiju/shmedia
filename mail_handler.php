@@ -3,19 +3,19 @@
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
-		$msg= "test mail";
+		$msg= $email;
 
 
 		$to='siddharthbiju@gmail.com'; // Receiver Email ID, Replace with your email ID
-		$subject='Form Submission';
-		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
+		$subject='SHdigimedia.com';
+		$message="Name :".$name."\n"."Phone :".$phone."\n"."email :".$msg;
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+		//	echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
 		}
 		else{
-			echo "Something went wrong!";
+		//	echo "Something went wrong!";
 		}
 	}
 ?>

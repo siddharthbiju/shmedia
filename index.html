@@ -443,7 +443,7 @@
 
         <div class="get-contact-background-box" id="get-contact-background-box"> </div>
         <div class="get-contact" id="get-contact">
-            <form action="mail_handler.php" method="post" name="form" id="frm1" class="get-contact-content-wrapper">
+            <form name="form" id="frm1" class="get-contact-content-wrapper">
                 <h2>Get A Free Quote </h2>
                 <div class="form__group field">
                     <input type="text" class="form__field" placeholder="Name" name="name" id="name" required />
@@ -463,7 +463,7 @@
                     <p class="invalid" id="invalidphone">Invalid phone number</p>
                 </div>
                 <div class="submit"></div>
-                <input type="submit" name="submit" value="Submit Request" class="btn">
+                <a onclick="submit_form()" class="btn">Submit Request</a>
             </form>
 
         </div>

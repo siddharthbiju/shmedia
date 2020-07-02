@@ -332,9 +332,49 @@ function validatename(test) {
 
 function blankit() {
   if (nametests == 1 && phonetests == 1 && emailtests == 1) {
-    console.log("hi");
     x[0].value = "";
     x[1].value = "";
     x[2].value = "";
+    submitmyform();
   }
 }
+
+function submitmyform() {
+  $.ajax({
+    type: 'get',
+    url: 'mail_handler.php',
+    data: {
+      name: name,
+      email: email,
+      phone: phone
+    },
+    success: function (response) {
+      alert("success");
+    }
+  });
+
+  return false;
+}
+
+
+/*
+var frm = $('#frm1');
+
+$(function () {
+
+  $('frm1').on('submit', function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      type: 'post',
+      url: 'mail_handler.php',
+      data: $('frm1').serialize(),
+      success: function () {
+        alert('form was submitted');
+      }
+    });
+
+  });
+
+});*/

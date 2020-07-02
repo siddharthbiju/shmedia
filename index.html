@@ -444,29 +444,29 @@
         <div class="get-contact-background-box" id="get-contact-background-box"> </div>
         <div class="get-contact" id="get-contact">
             <form action="mail_handler.php" method="post" name="form" id="frm1" class="get-contact-content-wrapper"
-                target="iframe_a">
+                target="iframe_a" onsubmit="return submit_form()">
                 <h2>Get A Free Quote </h2>
                 <div class="form__group field">
-                    <input type="text" class="form__field" placeholder="Name" name="name" id="name" required />
+                    <input type="text" class="form__field" placeholder="Name" name="name" id="name" />
                     <label for="name" class="form__label">Name</label>
                     <p class="invalid" id="invalidname">Invalid name</p>
                 </div>
 
                 <div class="form__group field">
-                    <input type="email" class="form__field" placeholder="Email" name="email" id="Email" required />
+                    <input type="email" class="form__field" placeholder="Email" name="email" id="Email" />
                     <label for="Email" class="form__label">Email</label>
                     <p class="invalid" id="invalidemail">Invalid email</p>
                 </div>
 
                 <div class="form__group field">
-                    <input type="phone" class="form__field" placeholder="phone" name="phone" id="phone" required />
+                    <input type="phone" class="form__field" placeholder="phone" name="phone" id="phone" />
                     <label for="phone" class="form__label">Phone</label>
                     <p class="invalid" id="invalidphone">Invalid phone number</p>
                 </div>
                 <div class="submit"></div>
                 <iframe class="submit_message" frameBorder="0" id="success_message" name="iframe_a"></iframe>
                 <br />
-                <a onclick="submit_form()" class="btn">Submit Request</a>
+                <input type="submit" name="submit" value="Submit Request" class="btn">
 
             </form>
         </div>

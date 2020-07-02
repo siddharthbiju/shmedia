@@ -294,12 +294,10 @@ function validateEmail(sEmail) {
   if (!sEmail.match(reEmail)) {
     invalidemail.style.visibility = "visible";
     emailtests = 0;
-    return false;
   }
   else {
     invalidemail.style.visibility = "hidden";
     emailtests = 1;
-    return true;
   }
 
 }
@@ -335,8 +333,11 @@ function blankit() {
     x[0].value = "";
     x[1].value = "";
     x[2].value = "";
-    document.getElementById("frm1").submit();
     document.getElementById("success_message").style.visibility = "visible";
+    return true;
+  }
+  else {
+    return false;
   }
 }
 

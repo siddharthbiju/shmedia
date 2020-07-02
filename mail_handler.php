@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="php.css" type="text/css">
 <?php
-
+	if(isset($_POST['submit'])){
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
@@ -8,7 +8,7 @@
 
 
 		$to='siddharthbiju@gmail.com'; // Receiver Email ID, Replace with your email ID
-		$subject='SHdigimedia.com';
+		$subject='New reply from shdigimedia.com';
 		$message="Name :".$name."\n"."Phone :".$phone."\n"."email :".$msg;
 		$headers="From: ".$email;
 
@@ -18,6 +18,5 @@
 		else{
 			echo "<p>Something went wrong!</p>";
 		}
-	
+	}
 ?>
-

@@ -87,10 +87,6 @@ img {
   border: 0;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
 figure {
   margin: 1em 40px;
 }
@@ -1397,7 +1393,6 @@ hr {
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
@@ -1666,7 +1661,6 @@ dd {
   .dl-horizontal dt {
     float: left;
     width: 160px;
-    overflow: hidden;
     clear: left;
     text-align: right;
     text-overflow: ellipsis;
@@ -3580,7 +3574,6 @@ tbody.collapse.in {
 .collapsing {
   position: relative;
   height: 0;
-  overflow: hidden;
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
@@ -3641,7 +3634,6 @@ tbody.collapse.in {
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
-  overflow: hidden;
   background-color: #e5e5e5;
 }
 
@@ -4109,7 +4101,6 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 .nav .nav-divider {
   height: 1px;
   margin: 9px 0;
-  overflow: hidden;
   background-color: #e5e5e5;
 }
 
@@ -5301,7 +5292,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 .progress {
   height: 20px;
   margin-bottom: 20px;
-  overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -5387,7 +5377,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 }
 
 .media, .media-body {
-  overflow: hidden;
   zoom: 1;
 }
 
@@ -5939,7 +5928,6 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
   display: block;
   height: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
@@ -6013,9 +6001,7 @@ button.close {
   border: 0;
 }
 
-.modal-open {
-  overflow: hidden;
-}
+.modal-open {}
 
 .modal {
   position: fixed;
@@ -6025,7 +6011,6 @@ button.close {
   left: 0;
   z-index: 1050;
   display: none;
-  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
@@ -6443,7 +6428,6 @@ button.close {
 .carousel-inner {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
 .carousel-inner>.item {

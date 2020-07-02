@@ -14,6 +14,7 @@
 }
 
 .address_details {
+  position: relative;
   display: flex;
   float: right;
   margin-right: 10%;
@@ -73,7 +74,7 @@
 
 @media screen and (max-width: 420px) {
   .small_contact p {
-    font-size: 12px;
+    font-size: 11.4px;
   }
   .small_contact img {
     height: 15px;
@@ -369,4 +370,13 @@ a:hover {
 
 .li:hover {
   color: #a99254;
+}
+
+.test {
+  width: 100%;
+  top: 0;
+  z-index: 100000000000000;
+  height: 30px;
+  background-color: brown;
+  position: fixed;
 }

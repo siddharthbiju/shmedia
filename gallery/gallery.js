@@ -48,7 +48,7 @@ image_height = image_height - 75;
 
 var f_images = document.getElementsByClassName("full_screen");
 var i;
-for (i = 0; i < 9; i++) {
+for (i = 0; i < 10; i++) {
   f_images[i].style.marginLeft = image_height + "px";
 }
 
@@ -114,6 +114,11 @@ f_images[7].onclick = function () {
 f_images[8].onclick = function () {
   modal.style.display = "block";
   modalImg.src = f_src[8].src;
+};
+
+f_images[9].onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = f_src[9].src;
 };
 
 // Get the <span> element that closes the modal

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="php.css" type="text/css">
 <?php
-	if(isset($_POST['submit'])){
+
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
@@ -18,6 +18,6 @@
 		else{
 			echo "<p>Something went wrong!</p>";
 		}
-	}
+	
 ?>
 

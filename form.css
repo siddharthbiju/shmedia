@@ -6,6 +6,12 @@
   width: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .form__group {
+    width: 80%;
+  }
+}
+
 .form__field {
   font-family: inherit;
   width: 100%;

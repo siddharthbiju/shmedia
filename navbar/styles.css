@@ -73,11 +73,12 @@
 }
 
 @media screen and (max-width: 420px) {
-  .small_contact p {
-    font-size: 11.4px;
+  .small_contact {
+    visibility: hidden;
   }
-  .small_contact img {
-    height: 15px;
+  .navbar-brand img {
+    width: 140px;
+    margin-top: 10px;
   }
 }
 
@@ -256,6 +257,13 @@ a:hover {
   z-index: 10000;
 }
 
+@media screen and (max-width: 600px) {
+  #gotop {
+    bottom: 23px;
+    right: 3%;
+  }
+}
+
 #gotop img {
   border-radius: 15px;
 }
@@ -322,7 +330,7 @@ a:hover {
     float: none !important;
   }
   .navbar-toggle {
-    margin-top: 40px;
+    margin-top: 30px;
     display: block;
   }
   .navbar-collapse {

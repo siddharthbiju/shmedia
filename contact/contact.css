@@ -13,6 +13,9 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
   color: #cdcdcd;
   font-family: Exo, sans-serif;
 }

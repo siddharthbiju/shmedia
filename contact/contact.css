@@ -284,6 +284,10 @@ h2 {
   color: white;
 }
 
+.btn:focus {
+  color: white;
+}
+
 .row-ceo {
   display: flex;
   flex-wrap: wrap;

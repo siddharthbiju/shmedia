@@ -330,14 +330,15 @@ function validatename(test) {
 
 function blankit() {
   if (nametests == 1 && phonetests == 1 && emailtests == 1) {
-    x[0].value = "";
-    x[1].value = "";
-    x[2].value = "";
+    // x[0].value = "";
+    // x[1].value = "";
+    // x[2].value = "";
+    x.submit();
     document.getElementById("success_message").style.visibility = "visible";
-    return true;
+    x.reset();
   }
   else {
-    return false;
+    //return false;
   }
 }
 

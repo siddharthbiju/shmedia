@@ -6,7 +6,7 @@
 		$phone=$_POST['phone'];
 		$msg= $email;
 
-		$to='siddharthbiju@gmail.com'; // Receiver Email ID, Replace with your email ID
+		$to='srth.raj@gmail.com'; // Receiver Email ID, Replace with your email ID
 		$subject='New reply from shdigimedia.com';
 		$message="Name :".$name."\r\n"."Phone :".$phone."\r\n"."email :".$msg;
 

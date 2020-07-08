@@ -554,13 +554,13 @@ h2 {
     width: 100%;
     margin-bottom: 15px;
   }
-  .addr_maps_section {
-    height: 600px;
-  }
 }
 
 @media screen and (max-width: 650px) {
   .address {
     width: 90%;
+  }
+  .email {
+    width: 232px;
   }
 }

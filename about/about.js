@@ -78,11 +78,11 @@ function serviceClick() {
 }
 
 function amplifiers() {
-  window.location.href = "/products/amplifiers/amplifiers.html";
+  window.open('/products/amplifiers/amplifiers.html', '_blank');
 }
 
 function subwoofers() {
-  window.location.href = "/products/subwoofers/subwoofers.html";
+  window.open('/products/subwoofers/subwoofers.html', '_blank');
 }
 
 const element5 = document.getElementById("gotop");
@@ -112,9 +112,9 @@ $(window).on("resize scroll", function () {
 });
 
 function ceo_sharath_fb() {
-  window.location.href = "https://www.facebook.com/profile.php?id=100000585396364";
+  window.open('https://www.facebook.com/profile.php?id=100000585396364', '_blank');
 }
 
 function ceo_varghese_fb() {
-  window.location.href = "https://www.facebook.com/profile.php?id=100008075837759";
+  window.open('https://www.facebook.com/profile.php?id=100008075837759', '_blank');
 }

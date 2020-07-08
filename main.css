@@ -440,7 +440,7 @@ h2 {
 
 .work-description {
     width: 80%;
-    height: 20%;
+    height: 100px;
     background-color: #ffffff;
     position: absolute;
     bottom: 0.01%;
@@ -462,6 +462,7 @@ h2 {
 .h6-work {
     font-weight: 600;
     margin-bottom: 6.75px;
+    margin-top: 3px;
 }
 
 h4 {

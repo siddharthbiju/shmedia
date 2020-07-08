@@ -95,9 +95,9 @@ if ($(window).width() >= 960) {
 }
 
 function amplifiers() {
-    window.location.href = "/products/amplifiers/amplifiers.html";
+    window.open('/products/amplifiers/amplifiers.html', '_blank');
 }
 
 function subwoofers() {
-    window.location.href = "/products/subwoofers/subwoofers.html";
+    window.open('/products/subwoofers/subwoofers.html', '_blank');
 }

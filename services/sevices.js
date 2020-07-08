@@ -56,16 +56,16 @@ $(window).on('resize scroll', function () {
 });
 
 function home_click() {
-    window.location.href = "/services/tabs/Home_theatre/home_theatre.html";
+    window.open('/services/tabs/Home_theatre/home_theatre.html', '_blank');
 }
 function automation_click() {
-    window.location.href = "/services/tabs/home_automation/home_automation.html";
+    window.open('/services/tabs/home_automation/home_automation.html', '_blank');
 }
 
 function amplifiers() {
-    window.location.href = "/products/amplifiers/amplifiers.html";
+    window.open('/products/amplifiers/amplifiers.html', '_blank');
 }
 
 function subwoofers() {
-    window.location.href = "/products/subwoofers/subwoofers.html";
+    window.open('/products/subwoofers/subwoofers.html', '_blank');
 }

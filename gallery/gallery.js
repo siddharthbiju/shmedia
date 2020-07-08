@@ -34,11 +34,11 @@ function serviceClick() {
 }
 
 function amplifiers() {
-  window.location.href = "/products/amplifiers/amplifiers.html";
+  window.open('/products/amplifiers/amplifiers.html', '_blank');
 }
 
 function subwoofers() {
-  window.location.href = "/products/subwoofers/subwoofers.html";
+  window.open('/products/subwoofers/subwoofers.html', '_blank');
 }
 
 let image_height = document.getElementById("image_height").clientWidth;

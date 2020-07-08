@@ -453,6 +453,7 @@ h2 {
 .work-description:hover {
     background-color: #202020;
     transition: background-color 200ms linear;
+    cursor: pointer;
 }
 
 .work-description:hover h4 {

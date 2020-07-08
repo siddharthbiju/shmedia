@@ -129,6 +129,8 @@ function subwoofers() {
   window.open('/products/subwoofers/subwoofers.html', '_blank');
 }
 
+/*
+// fautured animation
 const element1 = document.getElementById("fade-in");
 const element2 = document.getElementById("column_featured1");
 const element3 = document.getElementById("column_featured2");
@@ -190,7 +192,7 @@ if ($(window).width() < 960) {
     }
   });
 }
-
+*/
 const element5 = document.getElementById("gotop");
 let scrolltotop = 0;
 

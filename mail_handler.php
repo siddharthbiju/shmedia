@@ -8,7 +8,7 @@
 
 		$to='srth.raj@gmail.com'; // Receiver Email ID, Replace with your email ID
 		$subject='New reply from shdigimedia.com';
-		$message="Name : ".$name."<br />"."Phone : ".$phone."<br />"."email : ".$msg;
+		$message="Name : ".$name."<br />"."Phone : ".$phone."<br />"."Email : ".$msg;
 
 		$headers = "MIME-Version: 1.0" . "\r\n";
 		$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";

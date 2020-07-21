@@ -115,6 +115,7 @@
   height: auto;
   width: 150px;
   text-align: center;
+  z-index: 1000001;
 }
 
 .image-line {
@@ -163,9 +164,7 @@
   .products-menu {
     height: 520px;
   }
-  .dropdown-images {
-    pointer-events: none;
-  }
+  .dropdown-images {}
 }
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
@@ -363,9 +362,6 @@ a:hover {
 @media screen and (max-width: 629px) {
   .products-menu {
     height: 520px;
-  }
-  .dropdown-images {
-    pointer-events: none;
   }
 }
 

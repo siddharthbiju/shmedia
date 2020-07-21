@@ -69,3 +69,7 @@ function amplifiers() {
 function subwoofers() {
     window.open('/products/subwoofers/subwoofers.html', '_blank');
 }
+
+function audio_video_click() {
+    window.open('/services/tabs/audio_video/audio_video.html', '_blank');
+}

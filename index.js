@@ -109,6 +109,10 @@ function home_click() {
   window.open('/services/tabs/Home_theatre/home_theatre.html', '_blank');
 }
 
+function audio_video_click() {
+  window.open('/services/tabs/audio_video/audio_video.html', '_blank');
+}
+
 function automation_click() {
   window.open('/services/tabs/home_automation/home_automation.html', '_blank');
 }

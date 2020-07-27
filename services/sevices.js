@@ -62,6 +62,10 @@ function automation_click() {
     window.open('/services/tabs/home_automation/home_automation.html', '_blank');
 }
 
+function acoustic_click() {
+    window.open('/services/tabs/acoustic_design/acoustic_design.html', '_blank');
+}
+
 function amplifiers() {
     window.open('/products/amplifiers/amplifiers.html', '_blank');
 }

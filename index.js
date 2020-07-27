@@ -117,6 +117,10 @@ function automation_click() {
   window.open('/services/tabs/home_automation/home_automation.html', '_blank');
 }
 
+function acoustic_click() {
+  window.open('/services/tabs/acoustic_design/acoustic_design.html', '_blank');
+}
+
 function ceo_sharath_fb() {
   window.open('https://www.facebook.com/profile.php?id=100000585396364', '_blank');
 }

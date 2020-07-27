@@ -158,10 +158,6 @@ h3 {
   transition: 0.3s all ease;
 }
 
-.serviceiconbackground:hover {
-  padding: 0px;
-}
-
 .ServiceIconWrapper {
   display: flex;
   width: 100%;

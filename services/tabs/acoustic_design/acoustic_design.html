@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SH Digital Media</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../bootstrap.min.css" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Oswald:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../comments/comments.css">
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="/navbar/styles.css" />
+    <link rel="stylesheet" href="/comments/comments.css">
+    <link rel="stylesheet" href="acoustic_design.css" />
     <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/navbar/styles.css" />
+    <link rel="stylesheet" href="/services/fix.css" />
 
 
 </head>
@@ -39,26 +40,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="/index.html">
                     <img src="/images/logo3.png" height="30" />
                 </a>
             </div>
             <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="../index.html">Home</a>
+                        <a href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="/about/about.html">About</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" onclick="serviceClick()">services<b
                                 class="caret"></b></a>
                         <ul class="dropdown-menu slide-in-bottom">
-                            <li><a href="/services/tabs/Home_theatre/home_theatre.html">Custom
-                                    home theatre</a></li>
-                            <li class="li"><a href="/services/tabs/audio_video/audio_video.html">Audio/Video
-                                    Solutions</a></li>
+                            <li><a href="/services/tabs/Home_theatre/home_theatre.html">Custom home theatre</a></li>
+                            <li><a href="#">Audio/Video solutions</a></li>
                             <li><a href="/services/tabs/home_automation/home_automation.html">Home
                                     automation & Security</a></li>
                         </ul>
@@ -69,31 +68,31 @@
                         <ul class="dropdown-menu products-menu dropdown-menu
                                 slide-in-bottom">
                             <div class="dropdown-images" onclick="amplifiers()">
-                                <li><img src="../images/products/marantz.png" height="70px" /></li>
+                                <li><img src="/images/products/marantz.png" height="70px" /></li>
                                 <div class="image-line"></div>
                                 <h6>amplifiers</h6>
                                 <div class="hover-line"></div>
                             </div>
                             <div class="dropdown-images">
-                                <li><img src="../images/products/sony.png" height="70px" /></li>
+                                <li><img src="/images/products/sony.png" height="70px" /></li>
                                 <div class="image-line"></div>
                                 <h6>projectors</h6>
                                 <div class="hover-line"></div>
                             </div>
                             <div class="dropdown-images">
-                                <li><img src="../images/products/kef.png" height="70px" /></li>
+                                <li><img src="/images/products/kef.png" height="70px" /></li>
                                 <div class="image-line"></div>
                                 <h6>speakers</h6>
                                 <div class="hover-line"></div>
                             </div>
                             <div class="dropdown-images" onclick="subwoofers()">
-                                <li><img src="../images/products/elac.png" height="70px" /></li>
+                                <li><img src="/images/products/elac.png" height="70px" /></li>
                                 <div class="image-line"></div>
                                 <h6>SUBWOOFERS</h6>
                                 <div class="hover-line"></div>
                             </div>
                             <div class="dropdown-images">
-                                <li><img src="../images/products/fibaro.png" height="70px" /></li>
+                                <li><img src="/images/products/fibaro.png" height="70px" /></li>
                                 <div class="image-line"></div>
                                 <h6>HOME AUTOMATION</h6>
                                 <div class="hover-line"></div>
@@ -117,110 +116,57 @@
     </header>
 
 
-    <div class="hero-wrapper">
-        <div class="hero-text-wrapper">
-            <h1 class="hero-title">
-                ABOUT
-            </h1>
-        </div>
-
-        <div class="video-container">
-            <img src="/images/main_img.jpg" id="video-bg">
-        </div>
+    <div class="service_details" id="service_details">
+        <h6 class="view" id="view">service</h6>
+        <h1>ACOUSTIC DESIGN</h1>
+        <h3>Precise Performance</h3>
+        <p>We are responsible for controlling vibration in sensitive environments. We help reduce the impact
+            of noise from airports, highways and stadiums,
+            while making sure sound systems are heard with clarity in even the busiest transport hubs.</p>
+        <h3>Acoustical Design for Existing Facilities</h3>
+        <p>Our acoustical design consultants also provide services for finished buildings, rooms, and other retrofit
+            projects with acoustical challenges. We help design architectural spaces that perform acoustically the way
+            you desire and require, inside and out.
+        </p>
+        <h3>Appropriate reverberation time</h3>
+        <p>An appropriate reverberation time results from the following: The reverberation time must be tailored to the
+            room and the function of the room, and the reverberation time frequency spectrum should be reasonably flat
+            and even. The exception to this is concert halls for classical music, where the reverberation time may
+            increase slightly towards the lower frequencies. There are a number of recommendations which link the size
+            of the room, its use and the resulting reverberation time. </p>
+        <h3>Uniform sound distribution</h3>
+        <p> The requirement for uniform sound distribution is actually very banal. It is based on the fact that in large
+            spaces such as theatres or auditoria, it must be possible to hear well everywhere, i.e. that the sound
+            pressure level in dB only varies slightly across the audience. It is obviously very important in a theatre
+            that everyone can hear, even those sitting right at the back. The uniform sound coverage requirement can be
+            formulated very simply – that the sound level in the seats may only vary by a few dB, for example ± 5 dB.
+            This can easily be ascertained using a decibel meter at selected spots, and it can also be included in the
+            specifications for the room before work starts on designing the acoustics.
+        </p>
+        <h3>Appropriate sound level</h3>
+        <p>There must be a sufficiently high sound level in relation to the background noise. With the widespread use of
+            electrically amplified music and speech, this is seldom a big problem. On the other hand, sometimes it is
+            necessary to limit the sound, for the sake of neighbours for example.</p>
+        <h3>Low background noise</h3>
+        <p>The above comments on the appropriate sound level are closely related to the need for low background noise.
+            The difference between the available sound level (the appropriate loudness) and the inevitable background
+            noise is called the dynamic area, and it should be as large as possible.
+        </p>
+        <h3>No echo or flutter echo</h3>
+        <p>Another fairly obvious issue: An acoustically good room must not have any echo or flutter echo. We all know
+            what an echo is. When the reverberation time in a (large) room creates strong, single reflections, we
+            perceive it as echo. Echoes may occur if you have a large smooth, hard wall at one end of an otherwise
+            dampened room, while you are at the opposite end of the room. If you clap your hands (once), it can produce
+            such an echo. There has to be a certain time delay for the ear to perceive this delayed sound.
+        </p>
     </div>
+
 
     <div id="gotop" style="opacity: 0;">
         <a href="#">
             <img src="/images/icons/top.jpg" height="50px"></a>
     </div>
 
-    <div id="About-Us"></div>
-    <div class="service-background-box" id="service-background-box"></div>
-    <div class="about-images" id="about-images-container">
-        <img id="about-images" src="/images/speaker1.jpg">
-        <img class="about-image-2" id="about-images-2" src="/images/speaker2.jpg">
-
-    </div>
-
-    <div class="about" id="about">
-        <div class="about-content-wrapper">
-            <h6>about us</h6>
-            <h2>Attention to the Details. Trained to design, customize &
-                build your perfect system. </h2>
-            <p class="AboutDescription">
-                <strong>Smart home digital media brings life to your entertainment. Movies,
-                    sports,
-                    music and video games will feel real to you, we elevate your experience level to extraordinary.
-                </strong>
-                <br /><br />
-                Imagine a room with CinemaScope screen, high resolution 4 k UHD projector and heart pounding Dolby
-                Atmos sound system, furnished with comfortable upholstery and prefect light settings, that room will
-                be your paradise. You can make your dream room come true, SH media is here to assist you.
-                If you are building a new home, our team can work parallel to design a smart home theatre for you.
-                We can also renovate your already existing entertainment unit to next level. SH media is the best in
-                the industry, we create places capable of giving mind-blowing sensation to everything you
-                experience.<br />
-            </p>
-            <a href="/index.html#free-quote" class="btn">Get A Free
-                Quote</a>
-            <p><br /></p>
-        </div>
-    </div>
-
-
-    <div class="vertical-space"></div>
-
-
-
-    <div class="row-ceo">
-        <div class="column-ceo">
-            <div class="ceoiconbackground">
-                <div class="CEOIconWrapper">
-                    <img src="/images/sarath.jpeg">
-
-                </div>
-            </div>
-            <h6>Managing Director</h6>
-            <h3>Sarath Raj</h3>
-            <div class="CEO-SOCIAL">
-                <img src="/images/facebook.png" height="35px" onclick="ceo_sharath_fb()">
-                <img src="/images/instagram.png" height="35px">
-            </div>
-            <div class="CEOline"></div>
-        </div>
-
-        <div class="column-ceo">
-            <div class="ceoiconbackground">
-                <div class="CEOIconWrapper">
-                    <img src="/images/varghese.png" class="services-icon">
-                </div>
-            </div>
-            <h6>Managing Director</h6>
-            <h3>Varghese Francis</h3>
-            <div class="CEO-SOCIAL">
-                <img src="/images/facebook.png" height="35px" onclick="ceo_varghese_fb()">
-                <img src="/images/instagram.png" height="35px">
-            </div>
-            <div class="CEOline"></div>
-        </div>
-
-        <div class="column-ceo">
-            <div class="ceoiconbackground">
-                <div class="CEOIconWrapper">
-                    <img src="/images/shabin-image-1-.jpg">
-
-                </div>
-            </div>
-            <h6>Project Manager</h6>
-            <h3>Shabin</h3>
-            <div class="CEO-SOCIAL">
-                <img src="/images/facebook.png" height="35px" onclick="">
-                <img src="/images/instagram.png" height="35px">
-            </div>
-            <div class="CEOline"></div>
-        </div>
-
-    </div>
 
     <div class="vertical-space"></div>
 
@@ -368,5 +314,5 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="about.js"></script>
+        <script src="acoustic_design.js"></script>
 </body>

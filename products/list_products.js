@@ -1,18 +1,3 @@
-$(document).ready(function () {
-    $(".dropdown").hover(
-        function () {
-            $("dropdown-images.dropdown-menu", this)
-                .stop(true, true)
-                .slideDown("fast");
-            $(this).addClass("open");
-        },
-        function () {
-            $("dropdown-images.dropdown-menu", this).stop(true, true).slideUp("fast");
-            $(this).removeClass("open");
-        }
-    );
-});
-
 let mobileyt = document.getElementById("mobile-yt").clientWidth;
 let conh = document.getElementById("get-contact").clientHeight;
 let map_height = document.getElementById("address").clientHeight;

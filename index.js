@@ -257,7 +257,12 @@ $(window).resize(function () {
 
 const finish = document.getElementById("finish_loading");
 finish.classList.add("slide-out-top");
+setTimeout(zindexremove, 500)
 
+function zindexremove() {
+  finish.classList.remove("se-pre-con");
+  finish.style.zIndex = -9999;
+}
 
 setTimeout(function () { document.body.style.overflow = "scroll"; }, 1000);
 

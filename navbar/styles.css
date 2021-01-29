@@ -74,14 +74,18 @@
     visibility: hidden;
   }
   .navbar-brand img {
-    width: 140px;
+    width: 120px;
     margin-top: 10px;
+  }
+  .navbar-toggle {
+    float: right;
   }
 }
 
 @media screen and (max-width: 321px) {
   .small_contact p {
     visibility: hidden;
+    width: 100%;
   }
   .small_contact img {
     visibility: hidden;
@@ -384,5 +388,7 @@ a:hover {
 }
 
 @media all and (min-width: 992px) {
-	.navbar .dropdown:hover .dropdown-menu{ display: block; }
-}	
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}

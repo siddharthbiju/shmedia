@@ -564,3 +564,7 @@ h2 {
     width: 232px;
   }
 }
+
+.navbar-brand img {
+  margin-top: -22px !important;
+}

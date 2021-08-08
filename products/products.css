@@ -285,3 +285,7 @@ h3 {
     opacity: 0;
   }
 }
+
+.navbar-brand img {
+  margin-top: -22px !important;
+}

@@ -269,7 +269,7 @@ finish.classList.add("slide-out-top");
 setTimeout(zindexremove, 500)
 
 function zindexremove() {
-  finish.classList.remove("se-pre-con");
+  //finish.classList.remove("se-pre-con");
   finish.style.zIndex = -9999;
 }
 

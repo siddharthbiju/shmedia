@@ -183,3 +183,7 @@ h3 {
 .service_details h1 {
   text-transform: uppercase;
 }
+
+.navbar-brand img {
+  margin-top: -22px !important;
+}

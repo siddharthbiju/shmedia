@@ -175,3 +175,7 @@ h3 {
     padding: 30px;
   }
 }
+
+.navbar-brand img {
+  margin-top: -22px !important;
+}

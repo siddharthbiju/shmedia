@@ -308,3 +308,9 @@ h3 {
 .navbar-brand img {
   margin-top: -22px !important;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar-brand img {
+    margin-top: -10px !important;
+  }
+}

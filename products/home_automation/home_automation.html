@@ -1,272 +1,337 @@
 ß
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SH Digital Media</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Oswald:wght@300&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/comments/comments.css" />
     <link rel="stylesheet" href="/form.css" />
     <link rel="stylesheet" href="../list_products.css" />
-    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
 
-</head>
-
-<body onresize="resize()">
+  <body onresize="resize()">
     <div class="small_contact">
-        <div class="address_details">
-            <img src="/images/icons/phone-icon.svg" height="20px" />
-            <p>+91 965 633 5394</p>
-        </div>
-        <div class="address_details_email">
-            <img src="/images/icons/email-icon.svg" height="20px" />
-            <p>info@shdigimedia.com</p>
-        </div>
+      <div class="address_details">
+        <img src="/images/icons/phone-icon.svg" height="20px" />
+        <p>+91 965 633 5394</p>
+      </div>
+      <div class="address_details_email">
+        <img src="/images/icons/email-icon.svg" height="20px" />
+        <p>info@shdigimedia.com</p>
+      </div>
     </div>
-    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/index.html">
-                    <img src="/images/logo3.png" height="30" />
-                </a>
-            </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about/about.html">About</a>
-                    </li>
-                    <li class="dropdown">
-                        <a onclick="serviceClick()" class="dropdown-toggle" data-toggle="dropdown">services<b
-                                class="caret"></b></a>
-                        <ul class="dropdown-menu slide-in-bottom">
-                            <li><a href="/services/tabs/Home_theatre/home_theatre.html">Custom
-                                    home theatre</a></li>
-                            <li class="li"><a href="/services/tabs/audio_video/audio_video.html">Audio/Video
-                                    Solutions</a></li>
-                            <li><a href="/services/tabs/home_automation/home_automation.html">Home
-                                    automation & Security</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                        <ul class="dropdown-menu products-menu dropdown-menu
-                slide-in-bottom">
-                            <div class="dropdown-images">
-                                <li>
-                                    <img src="/images/products/marantz.png" height="70px" />
-                                </li>
-                                <div class="image-line"></div>
-                                <h6>amplifiers</h6>
-                                <div class="hover-line"></div>
-                            </div>
-                            <div class="dropdown-images">
-                                <li>
-                                    <img src="/images/products/sony.png" height="70px" />
-                                </li>
-                                <div class="image-line"></div>
-                                <h6>projectors</h6>
-                                <div class="hover-line"></div>
-                            </div>
-                            <div class="dropdown-images">
-                                <li>
-                                    <img src="/images/products/kef.png" height="70px" />
-                                </li>
-                                <div class="image-line"></div>
-                                <h6>speakers</h6>
-                                <div class="hover-line"></div>
-                            </div>
-                            <div class="dropdown-images">
-                                <li>
-                                    <img src="/images/products/elac.png" height="70px" />
-                                </li>
-                                <div class="image-line"></div>
-                                <h6>SUBWOOFERS</h6>
-                                <div class="hover-line"></div>
-                            </div>
-                            <div class="dropdown-images">
-                                <li>
-                                    <img src="/images/products/fibaro.png" height="70px" />
-                                </li>
-                                <div class="image-line"></div>
-                                <h6>HOME AUTOMATION</h6>
-                                <div class="hover-line"></div>
-                            </div>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="/gallery/gallery.html">gallery</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="free_nav">
-                        <a href="#free-quote">Get a free quote</a>
-                    </li>
-                </ul>
-            </nav>
+    <header
+      class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+      role="banner"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target=".bs-navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo3.png" height="30" />
+          </a>
         </div>
+        <nav
+          class="collapse navbar-collapse bs-navbar-collapse"
+          role="navigation"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/about/about.html">About</a>
+            </li>
+            <li class="dropdown">
+              <a
+                onclick="serviceClick()"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                >services<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu slide-in-bottom">
+                <li>
+                  <a href="/services/tabs/Home_theatre/home_theatre.html"
+                    >Custom home theatre</a
+                  >
+                </li>
+                <li class="li">
+                  <a href="/services/tabs/audio_video/audio_video.html"
+                    >Audio/Video Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="/services/tabs/home_automation/home_automation.html"
+                    >Home automation & Security</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Products<b class="caret"></b
+              ></a>
+              <ul
+                class="dropdown-menu products-menu dropdown-menu slide-in-bottom"
+              >
+                <div class="dropdown-images">
+                  <li>
+                    <img src="/images/products/marantz.png" height="70px" />
+                  </li>
+                  <div class="image-line"></div>
+                  <h6>amplifiers</h6>
+                  <div class="hover-line"></div>
+                </div>
+                <div class="dropdown-images">
+                  <li>
+                    <img src="/images/products/sony.png" height="70px" />
+                  </li>
+                  <div class="image-line"></div>
+                  <h6>projectors</h6>
+                  <div class="hover-line"></div>
+                </div>
+                <div class="dropdown-images">
+                  <li>
+                    <img src="/images/products/kef.png" height="70px" />
+                  </li>
+                  <div class="image-line"></div>
+                  <h6>speakers</h6>
+                  <div class="hover-line"></div>
+                </div>
+                <div class="dropdown-images">
+                  <li>
+                    <img src="/images/products/elac.png" height="70px" />
+                  </li>
+                  <div class="image-line"></div>
+                  <h6>SUBWOOFERS</h6>
+                  <div class="hover-line"></div>
+                </div>
+                <div class="dropdown-images">
+                  <li>
+                    <img src="/images/products/fibaro.png" height="70px" />
+                  </li>
+                  <div class="image-line"></div>
+                  <h6>HOME AUTOMATION</h6>
+                  <div class="hover-line"></div>
+                </div>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/gallery/gallery.html">gallery</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li class="free_nav">
+              <a href="#free-quote">Get a free quote</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="hero-wrapper">
-        <div class="hero-text-wrapper">
-            <h1 class="hero-title">
-                HOME AUTOMATION
-            </h1>
-        </div>
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">HOME AUTOMATION</h1>
+      </div>
 
-        <div class="video-container">
-            <img src="/images/main_img.jpg" id="video-bg" />
-        </div>
+      <div class="video-container">
+        <img src="/images/main_img.jpg" id="video-bg" />
+      </div>
     </div>
 
-    <div id="gotop" style="opacity: 0;">
-        <a href="#"> <img src="/images/icons/top.jpg" height="50px" /></a>
+    <div id="gotop" style="opacity: 0">
+      <a href="#"> <img src="/images/icons/top.jpg" height="50px" /></a>
     </div>
-
 
     <div class="comments-section" id="comments-section">
-        <div class="yt">
-            <iframe frameborder="0" src="https://www.youtube.com/embed/HD4TFlSKTcw">
-            </iframe>
-        </div>
-        <div class="comments">
-            <div class="wrapper">
-                <input checked type="radio" name="slider" id="slide1" />
-                <input type="radio" name="slider" id="slide2" />
-                <input type="radio" name="slider" id="slide3" />
-                <input type="radio" name="slider" id="slide4" />
+      <div class="yt">
+        <iframe frameborder="0" src="https://www.youtube.com/embed/HD4TFlSKTcw">
+        </iframe>
+      </div>
+      <div class="comments">
+        <div class="wrapper">
+          <input checked type="radio" name="slider" id="slide1" />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <input type="radio" name="slider" id="slide4" />
 
-                <div class="slider-wrapper" id="slider-wrapper">
-                    <div class="inner">
-                        <article>
-                            <div class="customer-wrapper">
-                                <div class="about-customer">
-                                    <img src="/images/customers/lal.jpg" class="services-icon" />
-                                    <h6>cine</h6>
-                                    <h3>Lal Babu</h3>
-                                </div>
+          <div class="slider-wrapper" id="slider-wrapper">
+            <div class="inner">
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img
+                      src="/images/customers/lal.jpg"
+                      class="services-icon"
+                    />
+                    <h6>cine</h6>
+                    <h3>Lal Babu</h3>
+                  </div>
 
-                                <p class="paragraph">
-                                    SH Media has been nothing but unbelievably great. You've
-                                    earned a customer! Wow, thank you! Great collection of
-                                    foreign and video brands..
-                                </p>
-                                <img class="article-icon" src="/images/quote.svg" height="100px" />
-                            </div>
-                        </article>
-
-                        <article>
-                            <div class="customer-wrapper" id="customer-wrapper">
-                                <div class="about-customer">
-                                    <img src="/images/customers/jacky.jpg" class="services-icon" />
-                                    <h6>Cini camera man</h6>
-                                    <h3>jacky</h3>
-                                </div>
-
-                                <p>
-                                    Our system was installed two years ago and we are happy with
-                                    the results. Finally, on the couple of occasions we have had
-                                    to contact SH Media with questions or possible upgrade, he
-                                    has replied timely.
-                                </p>
-                                <img class="article-icon" src="/images/quote.svg" height="100px" />
-                            </div>
-                        </article>
-
-                        <article>
-                            <div class="customer-wrapper">
-                                <div class="about-customer">
-                                    <img src="/images/customers/kb.jpg" class="services-icon" />
-                                    <h6>Customer</h6>
-                                    <h3>Sunny Jose</h3>
-                                </div>
-
-                                <p class="article-icon">
-                                    I highly recommend SH Digital media. They mounted my TV, with wires hidden in the
-                                    wall. Also mounted my surround speakers from the ceiling. Took their time to ensure
-                                    it was done right. Didn't let the fire break in my wall keep them from running all
-                                    the wires up. The quality, courtesy, and communication are top notch. Can't go wrong
-                                    with SH Digital media..
-
-
-                                </p>
-                                <img class="article-icon" src="/images/quote.svg" height="100px" />
-                            </div>
-                        </article>
-
-                        <article>
-                            <div class="customer-wrapper">
-                                <div class="about-customer">
-                                    <img src="/images/customers/wilfred.jpg" class="services-icon" />
-                                    <h6>customer</h6>
-                                    <h3>Wilfred Martin</h3>
-                                </div>
-
-                                <p class="paragraph">
-                                    In the theatre room in my house there was much more Echo...
-                                    I approached Smart Home Digital Media to find a solution for
-                                    this. Their expert sound engineers made it very
-                                    beautiful.Great work! Good installation, Audio and video is
-                                    mind blowing.
-                                </p>
-                                <img class="article-icon" src="/images/quote.svg" height="100px" />
-                            </div>
-                        </article>
-                    </div>
-                    <!-- .inner -->
+                  <p class="paragraph">
+                    SH Media has been nothing but unbelievably great. You've
+                    earned a customer! Wow, thank you! Great collection of
+                    foreign and video brands..
+                  </p>
+                  <img
+                    class="article-icon"
+                    src="/images/quote.svg"
+                    height="100px"
+                  />
                 </div>
-                <!-- .slider-wrapper -->
+              </article>
 
-                <div class="slider-prev-next-control">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                </div>
-                <!-- .slider-prev-next-control -->
+              <article>
+                <div class="customer-wrapper" id="customer-wrapper">
+                  <div class="about-customer">
+                    <img
+                      src="/images/customers/jacky.jpg"
+                      class="services-icon"
+                    />
+                    <h6>Cini camera man</h6>
+                    <h3>jacky</h3>
+                  </div>
 
-                <div class="slider-dot-control">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
+                  <p>
+                    Our system was installed two years ago and we are happy with
+                    the results. Finally, on the couple of occasions we have had
+                    to contact SH Media with questions or possible upgrade, he
+                    has replied timely.
+                  </p>
+                  <img
+                    class="article-icon"
+                    src="/images/quote.svg"
+                    height="100px"
+                  />
                 </div>
-                <!-- .slider-dot-control -->
+              </article>
+
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img src="/images/customers/kb.jpg" class="services-icon" />
+                    <h6>Customer</h6>
+                    <h3>Sunny Jose</h3>
+                  </div>
+
+                  <p class="article-icon">
+                    I highly recommend SH Digital media. They mounted my TV,
+                    with wires hidden in the wall. Also mounted my surround
+                    speakers from the ceiling. Took their time to ensure it was
+                    done right. Didn't let the fire break in my wall keep them
+                    from running all the wires up. The quality, courtesy, and
+                    communication are top notch. Can't go wrong with SH Digital
+                    media..
+                  </p>
+                  <img
+                    class="article-icon"
+                    src="/images/quote.svg"
+                    height="100px"
+                  />
+                </div>
+              </article>
+
+              <article>
+                <div class="customer-wrapper">
+                  <div class="about-customer">
+                    <img
+                      src="/images/customers/wilfred.jpg"
+                      class="services-icon"
+                    />
+                    <h6>customer</h6>
+                    <h3>Wilfred Martin</h3>
+                  </div>
+
+                  <p class="paragraph">
+                    In the theatre room in my house there was much more Echo...
+                    I approached Smart Home Digital Media to find a solution for
+                    this. Their expert sound engineers made it very
+                    beautiful.Great work! Good installation, Audio and video is
+                    mind blowing.
+                  </p>
+                  <img
+                    class="article-icon"
+                    src="/images/quote.svg"
+                    height="100px"
+                  />
+                </div>
+              </article>
             </div>
+            <!-- .inner -->
+          </div>
+          <!-- .slider-wrapper -->
+
+          <div class="slider-prev-next-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <!-- .slider-prev-next-control -->
+
+          <div class="slider-dot-control">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
+          <!-- .slider-dot-control -->
         </div>
+      </div>
     </div>
 
     <div class="end-black">
-        <p align="center" class="social-links">
-            <a class="footer-nav-link" href="https://www.facebook.com/shdigimedia" target="_blank">facebook</a>
-            <a href="https://www.instagram.com/sh.digitalmedia/" class="footer-nav-link" target="_blank">instagram</a>
-            <a href="https://www.youtube.com/channel/UCtwPvvgmXNFgqWCcOqCuWJw/featured" class="footer-nav-link"
-                target="_blank">youtube</a>
-        </p>
+      <p align="center" class="social-links">
+        <a
+          class="footer-nav-link"
+          href="https://www.facebook.com/shdigimedia"
+          target="_blank"
+          >facebook</a
+        >
+        <a
+          href="https://www.instagram.com/sh.digitalmedia/"
+          class="footer-nav-link"
+          target="_blank"
+          >instagram</a
+        >
+        <a
+          href="https://www.youtube.com/channel/UCtwPvvgmXNFgqWCcOqCuWJw/featured"
+          class="footer-nav-link"
+          target="_blank"
+          >youtube</a
+        >
+      </p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/navbar/styles.css" />
     <script src="../list_products.js"></script>
-</body>
-
+  </body>
 </html>

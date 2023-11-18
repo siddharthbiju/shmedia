@@ -58,6 +58,13 @@ a:hover {
   background-color: black;
 }
 
+#cover_image {
+  position: relative;
+  width: auto;
+  min-width: 100%;
+  width: 100%;
+}
+
 #video-bg {
   position: relative;
   width: auto;
@@ -75,9 +82,9 @@ h1 {
 }
 
 .btn {
-  background-color: #ac9455;
+  background-color: #d0d1d1;
   border: none;
-  color: white;
+  color: black;
   padding: 16px 100px;
   text-align: center;
   font-weight: 500;
@@ -87,7 +94,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #7e6c3e;
+  background-color: #5c5e5e;
   color: white;
 }
 

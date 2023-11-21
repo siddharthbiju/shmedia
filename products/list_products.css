@@ -297,6 +297,6 @@ h6 {
 
 @media screen and (max-width: 600px) {
   .navbar-brand img {
-    margin-top: -10px !important;
+    margin-top: 5px !important;
   }
 }

@@ -13,6 +13,12 @@
   padding-top: 7px;
 }
 
+@media only screen and (max-width: 767px) {
+  .small_contact {
+    display: none; /* Hide the small_contact div on mobile devices */
+  }
+}
+
 .address_details {
   position: relative;
   display: flex;

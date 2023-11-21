@@ -16,6 +16,7 @@ let small_contact = document.getElementById("small_contact");
 
 if (screen.width <= 600) {
   navbar.setAttribute("style", "width:" + screen.width + "px !important;");
+  console.log(screen.width);
   small_contact.setAttribute(
     "style",
     "width:" + screen.width + "px !important;"

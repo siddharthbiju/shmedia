@@ -48,14 +48,27 @@ a:hover {
 }
 
 .video-container {
-  width: 100%;
-  max-height: 120%;
   overflow: hidden;
   position: absolute;
-  top: 0;
   right: 0;
   z-index: -100;
   background-color: black;
+  top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Your desktop-specific styles here */
+  .video-container {
+    width: 100%;
+    top: 0;
+  }
+  /* Other desktop-specific styles */
+}
+
+@media only screen and (max-width: 767px) {
+  .video-container {
+    height: 120%;
+  }
 }
 
 #cover_image {
@@ -164,7 +177,7 @@ h1 {
 h6 {
   margin-top: 0px;
   margin-bottom: 7px;
-  color: #353533;
+  color: white;
   font-size: 12.5px;
   line-height: 22.5px;
   font-weight: 700;
@@ -275,6 +288,10 @@ h3 {
   width: 80%;
   max-width: 960px;
   text-align: center;
+}
+
+.about h6 {
+  color: #353533;
 }
 
 .service-background-box {

@@ -43,7 +43,7 @@
 }
 
 .free_nav:hover {
-  background-color: #7e6c3e;
+  background-color: #d0d1d1;
   color: white;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .navbar-inverse .navbar-brand:hover {
-  color: #ac9455;
+  color: #d0d1d1;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -220,7 +220,7 @@
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  color: #ac9455;
+  color: #d0d1d1;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -233,7 +233,7 @@
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #ac9455;
+  color: #d0d1d1;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {

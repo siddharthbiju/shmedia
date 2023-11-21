@@ -115,7 +115,7 @@ video {
 h6 {
   margin-top: 0px;
   margin-bottom: 7px;
-  color: #ac9455;
+  color: #d0d1d1;
   font-size: 12.5px;
   line-height: 22.5px;
   font-weight: 700;
@@ -251,13 +251,13 @@ h3 {
 }
 
 .espy {
-  color: #7e6c3e;
+  color: #d0d1d1;
 }
 
 .end-black p a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #ac9455;
+  color: #d0d1d1;
 }
 
 @keyframes slide-top-top {

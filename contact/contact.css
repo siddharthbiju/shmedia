@@ -62,7 +62,7 @@ video {
 h6 {
   margin-top: 0px;
   margin-bottom: 7px;
-  color: #ac9455;
+  color: #d0d1d1;
   font-size: 12.5px;
   line-height: 22.5px;
   font-weight: 700;
@@ -161,13 +161,13 @@ h6 {
 }
 
 .espy {
-  color: #7e6c3e;
+  color: #d0d1d1;
 }
 
 .end-black p a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #ac9455;
+  color: #d0d1d1;
 }
 
 .about {
@@ -190,7 +190,7 @@ h6 {
   right: 0;
   width: 40%;
   height: 600px;
-  background-color: #ac9455;
+  background-color: #d0d1d1;
   z-index: -10;
 }
 
@@ -271,7 +271,7 @@ h2 {
 }
 
 .btn {
-  background-color: #ac9455;
+  background-color: #d0d1d1;
   border: none;
   color: white;
   padding: 16px 100px;
@@ -283,7 +283,7 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #7e6c3e;
+  background-color: #d0d1d1;
   color: white;
 }
 
@@ -405,7 +405,7 @@ h2 {
   right: 0;
   width: 25%;
   height: 600px;
-  background-color: #ac9455;
+  background-color: #d0d1d1;
   z-index: -10;
 }
 

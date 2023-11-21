@@ -14,15 +14,6 @@ conh = conh + 160;
 let navbar = document.getElementById("navbar_main");
 let small_contact = document.getElementById("small_contact");
 
-if (screen.width <= 600) {
-  navbar.setAttribute("style", "width:" + screen.width + "px !important;");
-  console.log(screen.width);
-  small_contact.setAttribute(
-    "style",
-    "width:" + screen.width + "px !important;"
-  );
-}
-
 document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width =
   about_backgroud_width + "px";

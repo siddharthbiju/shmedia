@@ -48,6 +48,12 @@ a:hover {
   margin-top: 200px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-title {
+    margin-top: 0px;
+  }
+}
+
 .video-container {
   overflow: hidden;
   position: absolute;

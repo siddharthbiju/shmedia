@@ -23,12 +23,13 @@ document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width =
   about_backgroud_width + "px";
 
-let about_images_width = document.getElementById("service-background-box")
-  .clientWidth;
+let about_images_width = document.getElementById(
+  "service-background-box"
+).clientWidth;
 about_images_width = about_images_width + 804;
 
 document.getElementById("about-images-container").style.width =
-  about_images_width + "px";
+  about_images_width - 50 + "px";
 document.getElementById("about-images").style.height = aboutImageHeight + "px";
 document.getElementById("about-images-2").style.height =
   aboutImageHeight + "px";
@@ -45,8 +46,9 @@ function resize() {
   document.getElementById("service-background-box").style.width =
     about_backgroud_width + "px";
 
-  about_images_width = document.getElementById("service-background-box")
-    .clientWidth;
+  about_images_width = document.getElementById(
+    "service-background-box"
+  ).clientWidth;
   about_images_width = about_images_width + 804;
 
   document.getElementById("about-images-container").style.width =
@@ -63,11 +65,11 @@ function serviceClick() {
 }
 
 function amplifiers() {
-  window.open('/products/amplifiers/amplifiers.html', '_blank');
+  window.open("/products/amplifiers/amplifiers.html", "_blank");
 }
 
 function subwoofers() {
-  window.open('/products/subwoofers/subwoofers.html', '_blank');
+  window.open("/products/subwoofers/subwoofers.html", "_blank");
 }
 
 const element5 = document.getElementById("gotop");
@@ -97,9 +99,15 @@ $(window).on("resize scroll", function () {
 });
 
 function ceo_sharath_fb() {
-  window.open('https://www.facebook.com/profile.php?id=100000585396364', '_blank');
+  window.open(
+    "https://www.facebook.com/profile.php?id=100000585396364",
+    "_blank"
+  );
 }
 
 function ceo_varghese_fb() {
-  window.open('https://www.facebook.com/profile.php?id=100008075837759', '_blank');
+  window.open(
+    "https://www.facebook.com/profile.php?id=100008075837759",
+    "_blank"
+  );
 }

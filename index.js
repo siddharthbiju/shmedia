@@ -16,16 +16,19 @@ let small_contact = document.getElementById("small_contact");
 
 if (screen.width <= 600) {
   navbar.setAttribute("style", "width:" + screen.width + "px !important;");
-  small_contact.setAttribute("style", "width:" + screen.width + "px !important;");
+  small_contact.setAttribute(
+    "style",
+    "width:" + screen.width + "px !important;"
+  );
 }
-
 
 document.getElementById("service-background-box").style.height = h + "px";
 document.getElementById("service-background-box").style.width =
   about_backgroud_width + "px";
 
-let about_images_width = document.getElementById("service-background-box")
-  .clientWidth;
+let about_images_width = document.getElementById(
+  "service-background-box"
+).clientWidth;
 about_images_width = about_images_width + 804;
 
 document
@@ -53,7 +56,7 @@ document
   .setAttribute("style", "height:" + aboutImageHeight + "px");
 
 document.getElementById("about-images-container").style.width =
-  about_images_width + "px";
+  about_images_width - 50 + "px";
 
 function resize() {
   h = document.getElementById("about").clientHeight;
@@ -61,8 +64,9 @@ function resize() {
   mobileyt = document.getElementById("mobile-yt").clientWidth;
   pcytheight = document.getElementById("slider-wrapper").clientHeight;
   about_backgroud_width = document.getElementById("about").clientWidth;
-  about_images_width = document.getElementById("service-background-box")
-    .clientWidth;
+  about_images_width = document.getElementById(
+    "service-background-box"
+  ).clientWidth;
 
   about_images_width = about_images_width + 804;
 
@@ -95,42 +99,44 @@ function resize() {
 
   document.getElementById("about-images-container").style.width =
     about_images_width + "px";
-
 }
 
-
-
-
 function home_click() {
-  window.open('/services/tabs/Home_theatre/home_theatre.html', '_blank');
+  window.open("/services/tabs/Home_theatre/home_theatre.html", "_blank");
 }
 
 function audio_video_click() {
-  window.open('/services/tabs/audio_video/audio_video.html', '_blank');
+  window.open("/services/tabs/audio_video/audio_video.html", "_blank");
 }
 
 function automation_click() {
-  window.open('/services/tabs/home_automation/home_automation.html', '_blank');
+  window.open("/services/tabs/home_automation/home_automation.html", "_blank");
 }
 
 function acoustic_click() {
-  window.open('/services/tabs/acoustic_design/acoustic_design.html', '_blank');
+  window.open("/services/tabs/acoustic_design/acoustic_design.html", "_blank");
 }
 
 function ceo_sharath_fb() {
-  window.open('https://www.facebook.com/profile.php?id=100000585396364', '_blank');
+  window.open(
+    "https://www.facebook.com/profile.php?id=100000585396364",
+    "_blank"
+  );
 }
 
 function ceo_varghese_fb() {
-  window.open('https://www.facebook.com/profile.php?id=100008075837759', '_blank');
+  window.open(
+    "https://www.facebook.com/profile.php?id=100008075837759",
+    "_blank"
+  );
 }
 
 function amplifiers() {
-  window.open('/products/amplifiers/amplifiers.html', '_blank');
+  window.open("/products/amplifiers/amplifiers.html", "_blank");
 }
 
 function subwoofers() {
-  window.open('/products/subwoofers/subwoofers.html', '_blank');
+  window.open("/products/subwoofers/subwoofers.html", "_blank");
 }
 
 /*
@@ -263,17 +269,18 @@ $(window).resize(function () {
   $("#monitor").html(viewportWidth);
 });
 
-
 const finish = document.getElementById("finish_loading");
 finish.classList.add("slide-out-top");
-setTimeout(zindexremove, 500)
+setTimeout(zindexremove, 500);
 
 function zindexremove() {
   //finish.classList.remove("se-pre-con");
   finish.style.zIndex = -9999;
 }
 
-setTimeout(function () { document.body.style.overflow = "scroll"; }, 1000);
+setTimeout(function () {
+  document.body.style.overflow = "scroll";
+}, 1000);
 
 var x = document.getElementById("frm1");
 var invalidemail = document.getElementById("invalidemail");
@@ -295,21 +302,20 @@ function submit_form() {
 }
 
 function validateEmail(sEmail) {
-  var reEmail = /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
+  var reEmail =
+    /^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/;
 
   if (!sEmail.match(reEmail)) {
     invalidemail.style.visibility = "visible";
     emailtests = 0;
-  }
-  else {
+  } else {
     invalidemail.style.visibility = "hidden";
     emailtests = 1;
   }
-
 }
 
 function validatePhone(phoneField) {
-  var num = phoneField.value.replace(/[^\d]/g, '');
+  var num = phoneField.value.replace(/[^\d]/g, "");
   if (num.length != 10) {
     //Alert the user that the phone number entered was invalid.
     invalidphone.style.visibility = "visible";
@@ -323,12 +329,11 @@ function validatePhone(phoneField) {
 
 function validatename(test) {
   var str = test;
-  if (!str.replace(/\s/g, '').length) {
+  if (!str.replace(/\s/g, "").length) {
     invalidname.style.visibility = "visible";
     nametests = 0;
     //alert('string only contains whitespace (ie. spaces, tabs or line breaks)');
-  }
-  else {
+  } else {
     invalidname.style.visibility = "hidden";
     nametests = 1;
   }
@@ -342,11 +347,7 @@ function blankit() {
     x.submit();
     document.getElementById("success_message").style.visibility = "visible";
     x.reset();
-  }
-  else {
+  } else {
     //return false;
   }
 }
-
-
-
